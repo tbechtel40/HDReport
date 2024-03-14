@@ -18,7 +18,7 @@ function NavBar() {
       <link rel="stylesheet" href="style.css" />
       <style dangerouslySetInnerHTML={{ __html: "\n      " }} />
       <div className="header-nav">
-        <a className="plus-side-net-nav" href="/">
+        <a className="plus-side-net-nav" href="index.html">
           <img
             className="plus-side-net-nav"
             src="https://github.com/pkzstar/HDReport/blob/main/images/1500x500.png?raw=true"
@@ -27,7 +27,7 @@ function NavBar() {
         </a>
         <a
           className="twitter-link"
-          href="https://twitter.com/pplusside"
+          href="https://twitter.com/HDRreport"
           target="_blank"
         >
           <img
@@ -46,10 +46,10 @@ function NavBar() {
           />
         </a>
         <section className="nav-text">
-          <a href="/">
+          <a href="index.html">
             <p id="navText">Events</p>
           </a>
-          <a href="/Articles.html">
+          <a href="Articles.html">
             <p id="navText">Rankings</p>
           </a>
         </section>
