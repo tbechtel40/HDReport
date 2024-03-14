@@ -14,8 +14,8 @@ a:link { text-decoration: none; }
 a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
-a:link { color: rgb(0, 0, 0);}
-a:visited { color: rgb(0, 0, 0);}
+a:link { color: rgb(255, 255, 255);}
+a:visited { color: rgb(255, 255, 255);}
 a:hover {color: rgb(60, 42, 177);}
 a:active { color: rgb(27, 0, 199);}
 @media only screen and (max-width: 600px) {
@@ -52,7 +52,7 @@ section.nav-text {
 .header-nav {
     background-position-y: 70%;
     background-size: cover;
-    background-image: url(https://github.com/pkzstar/plus-side/blob/main/images/pokemon.gif?raw=true);
+    background-image: url();
     font-size: 35px;
   border-radius: 35%;
   font-family: Nunito;
@@ -175,13 +175,7 @@ img.plus-side-net-nav:active {
     border-style: double;
     border-block-style: groove;
    border-block-width: thick;
-   
-   background: rgb(50,185,152);
-   background: -moz-linear-gradient(30deg, rgba(50,185,152,1) 15%, rgba(147,255,214,1) 35%, rgba(50,185,152,1) 55%, rgba(147,255,214,1) 75%, rgba(50,185,152,1) 95%);
-   background: -webkit-linear-gradient(30deg, rgba(50,185,152,1) 15%, rgba(147,255,214,1) 35%, rgba(50,185,152,1) 55%, rgba(147,255,214,1) 75%, rgba(50,185,152,1) 95%);
-   background: linear-gradient(30deg, rgba(50,185,152,1) 15%, rgba(147,255,214,1) 35%, rgba(50,185,152,1) 55%, rgba(147,255,214,1) 75%, rgba(50,185,152,1) 95%);
-   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#32b998",endColorstr="#32b998",GradientType=1);
-
+   background-color: white;
    border-block-end-color: rgb(0, 65, 50);
    writing-mode: horizontal-tb;
 }
@@ -478,19 +472,13 @@ img.plus-side-net-nav:active {
 .start-gg {
     font-size: 30px;
     float: center;
-
-    background: rgb(50,185,152);
-    background: -moz-linear-gradient(0deg, rgba(50,185,152,1) 35%, rgba(255,255,255,1) 100%);
-    background: -webkit-linear-gradient(0deg, rgba(50,185,152,1) 35%, rgba(255,255,255,1) 100%);
-    background: linear-gradient(0deg, rgba(50,185,152,1) 35%, rgba(255,255,255,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#32b998",endColorstr="#ffffff",GradientType=1);
-
+    background-color: #d63c42;
     border-radius: 15px 15px 15px 15px;
     padding-left: 18px;
     padding-right: 18px;
-    box-shadow: 0 0 3px 0 rgb(0, 196, 16);
+    box-shadow: 0 0 3px 0 #d63c42;
         transition: .3s;
-        border-block-color: green;
+        border-block-color: #d63c42;
         border-style: double;
         border-block-style: groove;
        border-block-width: thick;
@@ -505,7 +493,7 @@ img.plus-side-net-nav:active {
 }
 .start-gg:hover {
     color: rgb(60, 42, 177);
-    box-shadow: 2px 2px 5px 1px rgb(0, 43, 4);
+    box-shadow: 2px 2px 5px 1px #d63c42;
     border-inline-color: slateblue;
         border-style: double;
         border-block-style: groove;
@@ -523,17 +511,13 @@ img.plus-side-net-nav:active {
     padding-bottom: 25px;
     justify-content: center;
     border-radius: 100px 100px 100px 100px;
-    box-shadow: 0 0 3px 0 rgb(0, 196, 16);
+    box-shadow: 0 0 3px 0 #d63c42;
     transition: .3s;
-    border-block-color: green;
+    border-block-color: #d63c42;
     border-block-style: groove;
    border-block-width: thick;
    border-style: double;
-   background: rgb(50,185,152);
-   background: -moz-linear-gradient(30deg, rgba(50,185,152,1) 15%, rgba(147,255,214,1) 35%, rgba(50,185,152,1) 55%, rgba(147,255,214,1) 75%, rgba(50,185,152,1) 95%);
-   background: -webkit-linear-gradient(30deg, rgba(50,185,152,1) 15%, rgba(147,255,214,1) 35%, rgba(50,185,152,1) 55%, rgba(147,255,214,1) 75%, rgba(50,185,152,1) 95%);
-   background: linear-gradient(30deg, rgba(50,185,152,1) 15%, rgba(147,255,214,1) 35%, rgba(50,185,152,1) 55%, rgba(147,255,214,1) 75%, rgba(50,185,152,1) 95%);
-   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#32b998",endColorstr="#32b998",GradientType=1);   border-block-end-color: rgb(0, 65, 50);
+   background-color: #ffffff;
    writing-mode: horizontal-tb;
 }
 @media only screen and (max-width: 600px) {
@@ -565,16 +549,13 @@ img.plus-side-net-nav:active {
 .vods-past {
     font-size: 30px;
     float: center;
-    background: rgb(50,185,152);
-    background: -moz-linear-gradient(0deg, rgba(50,185,152,1) 35%, rgba(255,255,255,1) 100%);
-    background: -webkit-linear-gradient(0deg, rgba(50,185,152,1) 35%, rgba(255,255,255,1) 100%);
-    background: linear-gradient(0deg, rgba(50,185,152,1) 35%, rgba(255,255,255,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#32b998",endColorstr="#ffffff",GradientType=1);    border-radius: 15px 15px 15px 15px;
+    background-color: #d63c42;   
+    border-radius: 15px 15px 15px 15px;
     padding-left: 20px;
     padding-right: 20px;
-    box-shadow: 0 0 3px 0 rgb(0, 196, 16);
+    box-shadow: 0 0 3px 0 #d63c42;
         transition: .3s;
-        border-block-color: green;
+        border-block-color: #d63c42;
         border-style: double;
         border-block-style: groove;
        border-block-width: thick;

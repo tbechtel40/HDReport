@@ -9,7 +9,7 @@ function NavBar() {
         href="https://fonts.googleapis.com/css?family=Nunito"
         rel="stylesheet"
       />
-      <title>Plus Side</title>
+      <title>HDReport</title>
       <link
         rel="icon"
         type="image/x-icon"
@@ -21,7 +21,7 @@ function NavBar() {
         <a className="plus-side-net-nav" href="/">
           <img
             className="plus-side-net-nav"
-            src="https://github.com/pkzstar/plus-side/blob/main/images/plusside.net.png?raw=true"
+            src="https://github.com/pkzstar/HDReport/blob/main/images/1500x500.png?raw=true"
             alt="oops"
           />
         </a>
@@ -50,7 +50,7 @@ function NavBar() {
             <p id="navText">Events</p>
           </a>
           <a href="/Articles.html">
-            <p id="navText">Articles</p>
+            <p id="navText">Rankings</p>
           </a>
         </section>
       </div>
