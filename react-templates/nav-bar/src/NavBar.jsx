@@ -15,7 +15,7 @@ function NavBar() {
         type="image/x-icon"
         href="https://github.com/pkzstar/plus-side/blob/main/images/favicon.png?raw=true"
       />
-      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="/style.css" />
       <style dangerouslySetInnerHTML={{ __html: "\n      " }} />
       <div className="header-nav">
         <a href="/index.html">
@@ -46,16 +46,16 @@ function NavBar() {
           />
         </a>
         <section className="nav-text">
-          <a href="/index.html">
+          <a href="/HDReport/index.html">
             <p id="navText">Events</p>
           </a>
-          <a href="/Articles.html">
+          <a href="/HDReport/Articles.html">
             <p id="navText">Rankings</p>
           </a>
-          <a href="/Locals.html">
+          <a href="/HDReport/Locals.html">
             <p id="navText">Locals</p>
           </a>
-          <a href="/Streams.html">
+          <a href="/HDReport/Streams.html">
             <p id="navText">Streams</p>
           </a>
         </section>
