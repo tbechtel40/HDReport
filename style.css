@@ -14,10 +14,37 @@ a:link { text-decoration: none; }
 a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
-a:link { color: rgb(0, 0, 0);}
-a:visited { color: rgb(0, 0, 0);}
+a:link { color: rgb(255, 255, 255);}
+a:visited { color: rgb(255, 255, 255);}
 a:hover {color: rgb(60, 42, 177);}
 a:active { color: rgb(27, 0, 199);}
+.black-link:link {
+    color: #000000;
+}
+.black-link:visited {
+    color: #000000;
+}
+.black-link {
+    color: #000000;
+}
+.black-link:link:hover {
+    color: #d63c42;
+}
+.black-link:visited:hover {
+    color: #d63c42;
+}
+.black-link:hover {
+    color: #d63c42;
+}
+.black-link:link:active {
+    color: rgb(27, 0, 199);
+}
+.black-link:visited:active {
+    color: rgb(27, 0, 199);
+}
+.black-link:active {
+    color: rgb(27, 0, 199);
+}
 @media only screen and (max-width: 600px) {
     p {
         font-size: 12px;
@@ -30,7 +57,6 @@ a:active { color: rgb(27, 0, 199);}
     margin: 0;
 }
 #navText:hover {
-    color: rgb(10, 180, 88);
     transform: scale3d(1.1, 1.1, 1.1); 
     transition: transform 0.3s ease;
 }
@@ -40,7 +66,6 @@ a:active { color: rgb(27, 0, 199);}
 @media only screen and (max-width: 600px) {
 section.nav-text {
     display: flex;
-
     justify-content: space-evenly;
     }
  }
@@ -63,22 +88,24 @@ section.nav-text {
     width: auto;
     background-position-y: 70%;
     background-size:cover;
-    background-image: url(https://github.com/pkzstar/plus-side/blob/main/images/pokemon.gif?raw=true);
     font-size: 20px;
     padding: 5px;
    }
 }
 img.plus-side-net-nav {
     float: left;
-    width: 250px;
+    width: auto;
+    height: 150px;
+    margin: -50px 0 0px 0;
 }
 @media only screen and (max-width: 600px) {
     
     img.plus-side-net-nav {
+        margin: -15px 0 0 0;
         display: flex;
-
+        height: auto;
         min-width: 25px;
-        width: 25%;
+        width: 12.5%;
         max-width: 100px;
      } 
  }
@@ -234,6 +261,7 @@ img.plus-side-net-nav:active {
     font-family: Nunito;
 }
 .article-date {
+    
     font-size: large;
     font-family: Nunito;
 }
@@ -286,14 +314,14 @@ img.plus-side-net-nav:active {
     display: flex;
 
     border-radius: 100px 100px 100px 100px;
-    box-shadow: 0 0 3px 0 #d63c42;;
+    box-shadow: 0 0 3px 0 #d63c42;
     transition: .3s;
-    border-block-color: #d63c42;;
+    border-block-color: #d63c42;
     border-style: double;
     border-block-style: groove;
    border-block-width: thick;
    background-color: white;
-   border-block-end-color: rgb(0, 65, 50);
+   border-block-end-color: #d63c42;
    writing-mode: horizontal-tb;
 }
 @media only screen and (max-width: 600px) {
@@ -302,8 +330,8 @@ img.plus-side-net-nav:active {
         display: block;
         border-radius: 25%;
         border-style: double;
-        border-block-end-color: rgb(0, 65, 50);
-        box-shadow: 3px 3px 6px 2px rgb(0, 43, 4);
+        border-block-end-color: #d63c42;
+        box-shadow: 3px 3px 6px 2px #d63c42;
         flex: 1;
         width: 75%;
         height: 75%;
@@ -347,7 +375,7 @@ img.plus-side-net-nav:active {
     }
 }
 .article-style:hover {
-    box-shadow: 2px 2px 5px 1px rgb(0, 43, 4);
+    box-shadow: 2px 2px 5px 1px #d63c42;
     border-style: double;
     font-family: Nunito; 
     border-block-color: rgb(255, 255, 255);
@@ -366,8 +394,8 @@ img.plus-side-net-nav:active {
     height: 300px;
     width: 300px;
     border-style: double;
-    border-block-end-color: rgb(0, 65, 50);
-    box-shadow: 3px 3px 6px 2px rgb(0, 43, 4);
+    border-block-end-color: #d63c42;
+    box-shadow: 3px 3px 6px 2px #d63c42;
 }
 .article-banner:hover {
     transform: scale3d(1.02, 1.02, 1.02); 
@@ -378,8 +406,7 @@ img.plus-side-net-nav:active {
 }
 .articleLink {
     display: inline-flex;
-
-    color:  rgb(10, 180, 88);
+    color: #d63c42;
 }
 .articleLink:hover {
     color: slateblue;
@@ -388,7 +415,7 @@ img.plus-side-net-nav:active {
     color: rgb(60, 42, 177);
 }
 #articleLink {
-    color:  rgb(10, 180, 88);
+    color: #d63c42;
 }
 #articleLink:hover {
     color: slateblue;
@@ -437,8 +464,8 @@ img.plus-side-net-nav:active {
     img.events-banners {
         border-radius: 25%;
         border-style: double;
-        border-block-end-color: rgb(0, 65, 50);
-        box-shadow: 3px 3px 6px 2px rgb(0, 43, 4);
+        border-block-end-color: #d63c42;
+        box-shadow: 3px 3px 6px 2px #d63c42;
         flex: 1;
         height: auto;
         width: 75%;
@@ -497,7 +524,7 @@ img.plus-side-net-nav:active {
     color: rgb(27, 0, 199);
 }
 .past-events { 
-    border-inline-color: rgb(0, 146, 172);
+    border-inline-color: rgb(109, 0, 172);
     font-family: Nunito;
     text-align: center;
     align-items: center;
@@ -518,8 +545,8 @@ img.plus-side-net-nav:active {
     li.past-events {
         border-radius: 25%;
         border-style: double;
-        border-block-end-color: rgb(0, 65, 50);
-        box-shadow: 3px 3px 6px 2px rgb(0, 43, 4);
+        border-block-end-color: #d63c42;
+        box-shadow: 3px 3px 6px 2px #d63c42;
         flex: 1;
         width: 50%;
         max-width: 250px;
@@ -527,7 +554,7 @@ img.plus-side-net-nav:active {
     }
 }
 .past-events:hover {
-    border-inline-color: rgb(0, 146, 172);
+    border-inline-color: rgb(109, 0, 172);
     border-style: double;
     border-block-color: rgb(255, 255, 255);
     border-block-style: groove;
@@ -571,7 +598,7 @@ img.plus-side-net-nav:active {
     }
 }
 .vods-past:hover {
-    box-shadow: 2px 2px 5px 1px rgb(0, 43, 4);
+    box-shadow: 2px 2px 5px 1px #d63c42;
     border-inline-color: slateblue;
         border-style: double;
         border-block-style: groove;
@@ -653,7 +680,7 @@ img.article-potential-characters {
     font-size: 30px;
     border: none;
     outline: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     background-color: inherit;
     padding: 0;
     overflow: visible;
@@ -703,8 +730,8 @@ img.article-potential-characters {
     background-color: rgba(0, 0, 0, 0.705);
     border-style: double;
     border-style: double;
-    border-inline-color: rgb(0, 146, 172);
-    border-block-color: green;
+    border-inline-color: rgb(109, 0, 172);
+    border-block-color: #d63c42;
     border-block-style: groove;
     border-block-width: thick;
     box-shadow: 3px 3px 6px 2px rgb(0, 43, 4);
@@ -876,11 +903,11 @@ img.events-banners-trans {
 .card {
     display: block;
     align-items: center;
-    background: rgb(147,255,214);
-    background: -moz-radial-gradient(circle, rgba(147,255,214,1) 65%, rgba(50,185,152,1) 90%);
-    background: -webkit-radial-gradient(circle, rgba(147,255,214,1) 65%, rgba(50,185,152,1) 90%);
-    background: radial-gradient(circle, rgba(147,255,214,1) 65%, rgba(50,185,152,1) 90%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#93ffd6",endColorstr="#32b998",GradientType=1);
+    background: rgb(255,140,145);
+    background: -moz-radial-gradient(circle, rgba(255,140,145,1) 65%, rgba(214,60,66,1) 90%);
+    background: -webkit-radial-gradient(circle, rgba(255,140,145,1) 65%, rgba(214,60,66,1) 90%);
+    background: radial-gradient(circle, rgba(255,140,145,1) 65%, rgba(214,60,66,1) 90%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff8c91",endColorstr="#d63c42",GradientType=1);
 }
 td {
     text-align: center;
@@ -975,11 +1002,11 @@ label.lead {
     div.card  {
         max-width: 90%;
         margin: unset;
-        background: rgb(147,255,214);
-        background: -moz-radial-gradient(circle, rgba(147,255,214,1) 65%, rgba(50,185,152,1) 90%);
-        background: -webkit-radial-gradient(circle, rgba(147,255,214,1) 65%, rgba(50,185,152,1) 90%);
-        background: radial-gradient(circle, rgba(147,255,214,1) 65%, rgba(50,185,152,1) 90%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#93ffd6",endColorstr="#32b998",GradientType=1);
+        background: rgb(255,140,145);
+        background: -moz-radial-gradient(circle, rgba(255,140,145,1) 65%, rgba(214,60,66,1) 90%);
+        background: -webkit-radial-gradient(circle, rgba(255,140,145,1) 65%, rgba(214,60,66,1) 90%);
+        background: radial-gradient(circle, rgba(255,140,145,1) 65%, rgba(214,60,66,1) 90%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff8c91",endColorstr="#d63c42",GradientType=1);
         height: 100px;
         margin-left: 550px;
     } 
@@ -1012,11 +1039,11 @@ label.lead {
     .form-inline {
         justify-content: space-evenly;
         margin-top: -21px;
-        background: rgb(147,255,214);
-        background: -moz-radial-gradient(circle, rgba(147,255,214,1) 65%, rgba(50,185,152,1) 90%);
-        background: -webkit-radial-gradient(circle, rgba(147,255,214,1) 65%, rgba(50,185,152,1) 90%);
-        background: radial-gradient(circle, rgba(147,255,214,1) 65%, rgba(50,185,152,1) 90%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#93ffd6",endColorstr="#32b998",GradientType=1);
+        background: rgb(255,140,145);
+        background: -moz-radial-gradient(circle, rgba(255,140,145,1) 65%, rgba(214,60,66,1) 90%);
+        background: -webkit-radial-gradient(circle, rgba(255,140,145,1) 65%, rgba(214,60,66,1) 90%);
+        background: radial-gradient(circle, rgba(255,140,145,1) 65%, rgba(214,60,66,1) 90%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff8c91",endColorstr="#d63c42",GradientType=1);
     }
     #next, #previous {
         margin-top: 20px;
@@ -1033,32 +1060,28 @@ label.lead {
 .calView {
     margin: 0 50px 0 50px;
     font-size: 30px;
-background: rgb(50,185,152);
-background: -moz-linear-gradient(0deg, rgba(50,185,152,1) 35%, rgba(255,255,255,1) 100%);
-background: -webkit-linear-gradient(0deg, rgba(50,185,152,1) 35%, rgba(255,255,255,1) 100%);
-background: linear-gradient(0deg, rgba(50,185,152,1) 35%, rgba(255,255,255,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#32b998",endColorstr="#ffffff",GradientType=1);    border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
     padding-left: 18px;
     padding-right: 18px;
-    box-shadow: 0 0 3px 0 rgb(0, 196, 16);
+    box-shadow: 0 0 3px 0 #d63c42;
         transition: .3s;
-        border-block-color: green;
+        border-block-color: #d63c42;
         border-style: double;
         border-block-style: groove;
        border-block-width: thick;
+       background-color: #d63c42;
+       border-block-end-color: #d63c42;;
+
 }
 .calViewList {
     font-size: 30px;
-    background: rgb(50,185,152);
-    background: -moz-linear-gradient(0deg, rgba(50,185,152,1) 35%, rgba(255,255,255,1) 100%);
-    background: -webkit-linear-gradient(0deg, rgba(50,185,152,1) 35%, rgba(255,255,255,1) 100%);
-    background: linear-gradient(0deg, rgba(50,185,152,1) 35%, rgba(255,255,255,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#32b998",endColorstr="#ffffff",GradientType=1);    border-radius: 15px 15px 15px 15px;
+    background-color: #d63c42;
+    border-radius: 15px 15px 15px 15px;
     padding-left: 18px;
     padding-right: 18px;
-    box-shadow: 0 0 3px 0 rgb(0, 196, 16);
+    box-shadow: 0 0 3px 0 #d63c42;
         transition: .3s;
-        border-block-color: green;
+        border-block-color: #d63c42;
         border-style: double;
         border-block-style: groove;
        border-block-width: thick;
