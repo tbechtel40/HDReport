@@ -5,7 +5,7 @@ function NavBar() {
     <div>
       <style dangerouslySetInnerHTML={{ __html: "\n      " }} />
       <div className="header-nav">
-        <a href="/HDReport/index.html">
+        <a href="index.html">
           <img
             className="plus-side-net-nav"
             src="https://github.com/pkzstar/HDReport/blob/main/images/logo-main.png?raw=true"
