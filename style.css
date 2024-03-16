@@ -77,7 +77,7 @@ section.nav-text {
     background-image: url();
     font-size: 35px;
   border-radius: 35%;
-  font-family: Nunito;
+  font-family: 'Oswald';
   padding: 30px 30px 30px 30px;
 }
 @media only screen and (max-width: 600px) { 
@@ -180,35 +180,32 @@ img.plus-side-net-nav:active {
     padding-left: 50px;
     text-align: left;
         font-size: large;
-        font-family: Nunito;
-}
+        font-family: 'Oswald';
+    }
 .events {
-    border-inline-color: rgb(0, 146, 172);
-    font-family: Nunito;
+    font-family: 'Oswald';
     text-align: center;
     padding: 25px;
     margin: 25px;
     align-items: center;
     justify-content: center;
     display: flex;
-
     border-radius: 100px 100px 100px 100px;
-    box-shadow: 0 0 3px 0 #d63c42;;
     transition: .3s;
-    border-block-color: #d63c42;;
     border-style: double;
     border-block-style: groove;
    border-block-width: thick;
    background-color: white;
-   border-block-end-color: #d63c42;;
+   box-shadow: 0 0 20px 0  rgb(4, 217, 255);
+   border-inline-color: rgb(4, 217, 255);
+   border-block-color: #d63c42;
    writing-mode: horizontal-tb;
 }
 .events:hover {
-    border-inline-color: rgb(0, 146, 172);
-    border-style: double;
-    border-block-color: rgb(255, 255, 255);
-    border-block-style: groove;
-   border-block-width: thick;
+    border-inline-color:#d63c42;
+    border-block-color: rgb(4, 217, 255);
+    box-shadow: 0px 0px 40px 0px #d63c42;
+
 }
 @media only screen and (max-width: 600px) {
     .events {
@@ -216,10 +213,9 @@ img.plus-side-net-nav:active {
         display: block;
         border-radius: 25%;
         border-style: double;
-        border-block-end-color: rgb(0, 65, 50);
-        box-shadow: 3px 3px 6px 2px rgb(0, 43, 4);
+        border-block-end-color:#d63c42;
+        box-shadow: 3px 3px 6px 2px #d63c42;
         flex: 1;
-
         width: 75%;
         height: 75%;
         max-width: 250px;
@@ -255,12 +251,12 @@ img.plus-side-net-nav:active {
 .article-head {
     padding-left: 50px;
     text-align: left;
-    font-family: Nunito;
+    font-family: 'Oswald';
 }
 .article-date {
     
     font-size: large;
-    font-family: Nunito;
+    font-family: 'Oswald';
 }
 @media only screen and (max-width: 1000px) {
     b.article-date {
@@ -288,7 +284,7 @@ img.plus-side-net-nav:active {
 .article-read:hover {
     box-shadow: 2px 2px 5px 1px rgb(0, 43, 4);
     border-style: double;
-    font-family: Nunito; 
+    font-family: 'Oswald';
     color: rgb(60, 42, 177);
     border-inline-color: slateblue;
         border-style: double;
@@ -300,25 +296,22 @@ img.plus-side-net-nav:active {
 }
 .article-style {
     flex-direction: row;
-
-    border-inline-color: rgb(0, 146, 172);
-    font-family: Nunito;
+    font-family: 'Oswald';
     text-align: center;
     padding: 25px;
     margin: 25px;
     align-items: center;
     justify-content: center;
     display: flex;
-
     border-radius: 100px 100px 100px 100px;
-    box-shadow: 0 0 3px 0 #d63c42;
     transition: .3s;
-    border-block-color: #d63c42;
     border-style: double;
     border-block-style: groove;
    border-block-width: thick;
    background-color: white;
-   border-block-end-color: #d63c42;
+   box-shadow: 0 0 20px 0  rgb(4, 217, 255);
+   border-inline-color: rgb(4, 217, 255);
+   border-block-color: #d63c42;
    writing-mode: horizontal-tb;
 }
 @media only screen and (max-width: 600px) {
@@ -372,13 +365,14 @@ img.plus-side-net-nav:active {
     }
 }
 .article-style:hover {
-    box-shadow: 2px 2px 5px 1px #d63c42;
     border-style: double;
-    font-family: Nunito; 
-    border-block-color: rgb(255, 255, 255);
+    font-family: 'Oswald';
     border-block-style: groove;
    writing-mode: horizontal-tb;
    border-block-width: thick;
+   border-inline-color:#d63c42;
+   border-block-color: rgb(4, 217, 255);
+   box-shadow: 0px 0px 40px 0px #d63c42;
 }
 .article-body {
     font-size: larger;
@@ -512,30 +506,30 @@ img.plus-side-net-nav:active {
 .start-gg:hover {
     color: rgb(60, 42, 177);
     box-shadow: 2px 2px 5px 1px #d63c42;
-    border-inline-color: slateblue;
+    border-inline-color:  rgb(4, 217, 255);
         border-style: double;
         border-block-style: groove;
-       border-block-width: thick;       
+       border-block-width: thick;    
 }
 .start-gg:active {
     color: rgb(27, 0, 199);
 }
 .past-events { 
-    border-inline-color: rgb(109, 0, 172);
-    font-family: Nunito;
+    font-family: 'Oswald';
     text-align: center;
     align-items: center;
     padding-top: 25px;
     padding-bottom: 25px;
     justify-content: center;
     border-radius: 100px 100px 100px 100px;
-    box-shadow: 0 0 3px 0 #d63c42;
     transition: .3s;
-    border-block-color: #d63c42;
     border-block-style: groove;
    border-block-width: thick;
    border-style: double;
-   background-color: #ffffff;
+   background-color: white;
+   box-shadow: 0 0 20px 0  rgb(4, 217, 255);
+   border-inline-color: rgb(4, 217, 255);
+   border-block-color: #d63c42;
    writing-mode: horizontal-tb;
 }
 @media only screen and (max-width: 600px) {
@@ -551,11 +545,12 @@ img.plus-side-net-nav:active {
     }
 }
 .past-events:hover {
-    border-inline-color: rgb(109, 0, 172);
     border-style: double;
-    border-block-color: rgb(255, 255, 255);
     border-block-style: groove;
    border-block-width: thick;
+   border-inline-color:#d63c42;
+   border-block-color: rgb(4, 217, 255);
+   box-shadow: 0px 0px 40px 0px #d63c42;
 }
 .past-article-text {
         font-size: larger;
@@ -596,11 +591,11 @@ img.plus-side-net-nav:active {
 }
 .vods-past:hover {
     box-shadow: 2px 2px 5px 1px #d63c42;
-    border-inline-color: slateblue;
+    border-inline-color: rgb(4, 217, 255);
         border-style: double;
         border-block-style: groove;
        border-block-width: thick;
-       color: rgb(60, 42, 177);
+       color: #d63c42;
 }
 .vods-past:active {
     color: rgb(27, 0, 199);
@@ -727,11 +722,12 @@ img.article-potential-characters {
     background-color: rgba(0, 0, 0, 0.705);
     border-style: double;
     border-style: double;
-    border-inline-color: rgb(109, 0, 172);
+    border-inline-color:rgb(4, 217, 255);
     border-block-color: #d63c42;
     border-block-style: groove;
     border-block-width: thick;
-    box-shadow: 3px 3px 6px 2px rgb(0, 43, 4);
+    box-shadow: 3px 3px 6px 2px  #d63c42;
+ 
 }
 @media only screen and (max-width: 600px) {
     .dropdown-links {
@@ -853,8 +849,7 @@ img.events-banners-trans {
     -webkit-background-clip: text;
     background-clip: text;
     font-size: 100px;
-    font-family: Futura;
-    font-style: italic;
+    font-family: 'Oswald';
     margin: unset;
 }
 #authorPageHeader {
@@ -862,39 +857,37 @@ img.events-banners-trans {
     -webkit-background-clip: text;
     background-clip: text;
     font-size: 50px;
-    font-family: Futura;
-    font-style: italic;
+    font-family: 'Oswald';
     margin: unset;
     margin: 1% 0 2% 0;
 }
 @media only screen and (max-width: 600px) {
    #pageHeader {
-    font-family: Futura;
+    font-family: 'Oswald';
     -webkit-text-stroke-width: unset;
     font-size: x-large;
     margin: unset;
    }
    #authorPageHeader {
-    font-family: Futura;
     -webkit-text-stroke-width: unset;
     font-size: large;
     margin: 5px 0 5px 0;
    }
 }
 .textGradient {
+    -webkit-text-fill-color: white;
     background: rgb(255,255,255);
-    background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 29%, rgba(255,255,255,1) 31%, rgba(255,255,255,1) 45%, rgba(128,128,128,1) 60%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 100%);
-    background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 29%, rgba(255,255,255,1) 31%, rgba(255,255,255,1) 45%, rgba(128,128,128,1) 60%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 100%);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 29%, rgba(255,255,255,1) 31%, rgba(255,255,255,1) 45%, rgba(128,128,128,1) 60%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+    text-shadow:
+    2px 2px 2px #ffffff, /* Outer red shadow */
+    5px 5px 5px #d63c42, /* Inner red shadow */
+    5px 5px 5px  #d63c42; /* Inner red shadow */
 }
 #pageHeaderAuthor {
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: white;
     -webkit-background-clip: text;
     background-clip: text;
     font-size: 50px;
-    font-family: Futura;
-    font-style: italic;
+    font-family: 'Oswald';
     margin: unset;
 }
 .card {
@@ -935,7 +928,7 @@ th {
     text-align: center;
 }
 .card-header {
-    font-family: Nunito;
+    font-family: 'Oswald';
     text-align: center;
 }
 .calendarImg {
