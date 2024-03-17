@@ -873,6 +873,12 @@ img.events-banners-trans {
     font-size: large;
     margin: 5px 0 5px 0;
    }
+   h1.textGradient {
+    text-shadow:
+    0px 0px 0px #ffffff, /* Outer red shadow */
+    2px 2px 2px #d63c42, /* Inner red shadow */
+    2px 2px 2px  #d63c42; /* Inner red shadow */
+   }
 }
 .textGradient {
     -webkit-text-fill-color: white;
