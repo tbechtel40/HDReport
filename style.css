@@ -214,7 +214,7 @@ img.plus-side-net-nav:active {
         border-radius: 25%;
         border-style: double;
         border-block-end-color:#d63c42;
-        box-shadow: 3px 3px 6px 2px #d63c42;
+        box-shadow: 0 0 15px 0  rgb(4, 217, 255);
         flex: 1;
         width: 75%;
         height: 75%;
