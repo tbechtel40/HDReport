@@ -483,15 +483,15 @@ img.plus-side-net-nav:active {
 }
 .start-gg {
     font-size: 30px;
-    float: center;
     background-color: #d63c42;
     border-radius: 15px 15px 15px 15px;
     padding-left: 18px;
     padding-right: 18px;
     box-shadow: 0 0 3px 0 #d63c42;
         transition: .3s;
-        border-block-color: #d63c42;
         border-style: double;
+        border-inline-color: rgb(4, 217, 255);
+        border-block-color: #d63c42;
         border-block-style: groove;
        border-block-width: thick;
 }
@@ -505,7 +505,7 @@ img.plus-side-net-nav:active {
 }
 .start-gg:hover {
     color: rgb(60, 42, 177);
-    box-shadow: 2px 2px 5px 1px #d63c42;
+    box-shadow: 4px 4px 7px 3px #d63c42;
     border-inline-color:  rgb(4, 217, 255);
         border-style: double;
         border-block-style: groove;
@@ -562,14 +562,15 @@ img.plus-side-net-nav:active {
 .vods-past {
     font-size: 30px;
     float: center;
-    background-color: #d63c42;   
+    background-color: #d63c42;
     border-radius: 15px 15px 15px 15px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 18px;
+    padding-right: 18px;
     box-shadow: 0 0 3px 0 #d63c42;
         transition: .3s;
-        border-block-color: #d63c42;
         border-style: double;
+        border-inline-color: rgb(4, 217, 255);
+        border-block-color: #d63c42;
         border-block-style: groove;
        border-block-width: thick;
        margin: 0px 0 10px 0;
@@ -590,12 +591,12 @@ img.plus-side-net-nav:active {
     }
 }
 .vods-past:hover {
-    box-shadow: 2px 2px 5px 1px #d63c42;
-    border-inline-color: rgb(4, 217, 255);
         border-style: double;
         border-block-style: groove;
        border-block-width: thick;
        color: #d63c42;
+       box-shadow: 4px 4px 7px 3px #d63c42;
+       border-inline-color:  rgb(4, 217, 255);
 }
 .vods-past:active {
     color: rgb(27, 0, 199);
@@ -1064,15 +1065,13 @@ label.lead {
     border-radius: 15px 15px 15px 15px;
     padding-left: 18px;
     padding-right: 18px;
-    box-shadow: 0 0 3px 0 #d63c42;
         transition: .3s;
-        border-block-color: #d63c42;
         border-style: double;
         border-block-style: groove;
        border-block-width: thick;
        background-color: #d63c42;
-       border-block-end-color: #d63c42;;
-
+       border-inline-color: rgb(4, 217, 255);
+       border-block-color: #d63c42;
 }
 .calViewList {
     font-size: 30px;
@@ -1080,10 +1079,10 @@ label.lead {
     border-radius: 15px 15px 15px 15px;
     padding-left: 18px;
     padding-right: 18px;
-    box-shadow: 0 0 3px 0 #d63c42;
         transition: .3s;
-        border-block-color: #d63c42;
         border-style: double;
+        border-inline-color: rgb(4, 217, 255);
+        border-block-color: #d63c42;
         border-block-style: groove;
        border-block-width: thick;
 }
@@ -1112,11 +1111,13 @@ button.calViewList {
 .calView:hover
     {
     color: rgb(60, 42, 177);
-    box-shadow: 2px 2px 5px 1px rgb(0, 43, 4);
-    border-inline-color: slateblue;
         border-style: double;
         border-block-style: groove;
+        border-inline-color: rgb(4, 217, 255);
+        border-block-color: #d63c42;
        border-block-width: thick;       
+       box-shadow: 0 0 10px 0  rgb(4, 217, 255);
+
 }
 .listView {
     margin-bottom: 6%;
