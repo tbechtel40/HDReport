@@ -505,13 +505,14 @@ img.plus-side-net-nav:active {
 }
 .start-gg:hover {
     color: rgb(60, 42, 177);
-    box-shadow: 4px 4px 7px 3px #d63c42;
+    box-shadow: 2px 2px 5px 1px #d63c42;
     border-inline-color:  rgb(4, 217, 255);
         border-style: double;
         border-block-style: groove;
        border-block-width: thick;    
 }
 .start-gg:active {
+    box-shadow: 4px 4px 7px 3px  #d63c42;
     color: rgb(27, 0, 199);
 }
 .past-events { 
@@ -595,10 +596,11 @@ img.plus-side-net-nav:active {
         border-block-style: groove;
        border-block-width: thick;
        color: #d63c42;
-       box-shadow: 4px 4px 7px 3px #d63c42;
+       box-shadow: 2px 2px 5px 1px #d63c42;
        border-inline-color:  rgb(4, 217, 255);
 }
 .vods-past:active {
+    box-shadow: 4px 4px 7px 3px #d63c42;
     color: rgb(27, 0, 199);
 
 }
@@ -1085,6 +1087,8 @@ label.lead {
         border-block-color: #d63c42;
         border-block-style: groove;
        border-block-width: thick;
+       box-shadow: 0 0 10px 0  rgb(4, 217, 255);
+
 }
 @media only screen and (max-width: 767px) {
     
