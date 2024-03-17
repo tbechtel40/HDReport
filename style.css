@@ -98,7 +98,7 @@ img.plus-side-net-nav {
 @media only screen and (max-width: 600px) {
     
     img.plus-side-net-nav {
-        margin: -15px 0 0 0;
+        margin: -10px 0 0 0;
         display: flex;
         height: auto;
         min-width: 25px;
@@ -615,12 +615,15 @@ img.plus-side-net-nav:active {
     border-width: 2px;
     border-color: white;
     border-style: outset;
+    box-shadow: 0 0 15px 0  #d63c42;
+
 }
 .article-body-image-bigger {
     width: 100%;
     height: auto;
     border-width: 2px;
     border-color: white;
+    box-shadow: 0 0 15px 0  #d63c42;
     border-style: outset;
 }
 .article-player-side {
@@ -908,6 +911,8 @@ img.events-banners-trans {
 td {
     text-align: center;
     justify-content: center;
+    box-shadow: 0 0 15px 0  #d63c42;
+
 }
 table {
     background: rgb(64,213,254);
