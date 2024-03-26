@@ -67,15 +67,48 @@ function showCalendar(month, year) {
                 }
 
                 
-                //Game 5 in the D
-            if(month === 0 && date === 20 && year === 2024) {
+                //Bae
+            if(month === 2 && date === 30 && year === 2024) {
                 // Example link with image
                 let link = document.createElement("a");
-                link.href = "https://www.start.gg/tournament/game-5-in-the-d/details";
+                link.href = "https://www.start.gg/tournament/bae-03-2024/details";
                 link.target = "_blank";
 
                 let image = document.createElement("img");
-                image.src = "https://github.com/pkzstar/plus-side/blob/main/images/game5In.png?raw=true";
+                image.src = "https://github.com/pkzstar/HDReport/blob/main/images/upcoming%20events/bae.png?raw=true";
+
+                image.classList.add("calendarImg");
+
+
+                link.appendChild(image);
+                cell.appendChild(link);
+
+
+                //Shenanigames 4
+             }else if(month === 4 && date === 4 && year === 2024) {
+                // Example link with image
+                let link = document.createElement("a");
+                link.href = "https://www.start.gg/tournament/shenanigames-4/details";
+                link.target = "_blank";
+
+                let image = document.createElement("img");
+                image.src = "https://github.com/pkzstar/HDReport/blob/main/images/upcoming%20events/Shenanigames%204.png?raw=true";
+
+                image.classList.add("calendarImg");
+
+
+                link.appendChild(image);
+                cell.appendChild(link);
+
+                //Ghost town 2
+             }else if(month === 4 && date === 11 && year === 2024) {
+                // Example link with image
+                let link = document.createElement("a");
+                link.href = "https://www.start.gg/tournament/ghost-town-2-call-of-the-lloyd-ft-zamu-spark/details";
+                link.target = "_blank";
+
+                let image = document.createElement("img");
+                image.src = "https://github.com/pkzstar/HDReport/blob/main/images/upcoming%20events/Ghost%20Town%202.png?raw=true";
 
                 image.classList.add("calendarImg");
 
