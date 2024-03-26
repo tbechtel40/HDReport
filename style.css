@@ -859,7 +859,7 @@ img.events-banners-trans {
     cursor: unset;
 }
 #pageHeader {
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: .75px;
     -webkit-text-stroke-color: #d63c42;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
