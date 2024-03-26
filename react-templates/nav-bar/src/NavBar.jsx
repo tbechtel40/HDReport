@@ -5,7 +5,7 @@ function NavBar() {
     <div>
       <style dangerouslySetInnerHTML={{ __html: "\n      " }} />
       <div className="header-nav">
-        <a href="index.html">
+        <a href="/">
           <img
             className="plus-side-net-nav"
             src="https://github.com/pkzstar/HDReport/blob/main/images/logo-main.png?raw=true"
@@ -33,16 +33,16 @@ function NavBar() {
           />
         </a>
         <section className="nav-text">
-          <a href="/HDReport/index.html">
+          <a href="/">
             <p id="navText">Events</p>
           </a>
-          <a href="/HDReport/Articles.html">
+          <a href="/Articles.html">
             <p id="navText">Rankings</p>
           </a>
-          <a href="/HDReport/Locals.html">
+          <a href="/Locals.html">
             <p id="navText">Find Your Locals</p>
           </a>
-          <a href="/HDReport/Streams.html">
+          <a href="/Streams.html">
             <p id="navText">Streams</p>
           </a>
         </section>
