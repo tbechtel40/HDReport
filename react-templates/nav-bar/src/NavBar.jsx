@@ -40,7 +40,7 @@ function NavBar() {
             <p id="navText">Rankings</p>
           </a>
           <a href="/HDReport/Locals.html">
-            <p id="navText">Locals</p>
+            <p id="navText">Find Your Locals</p>
           </a>
           <a href="/HDReport/Streams.html">
             <p id="navText">Streams</p>
