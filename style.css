@@ -37,14 +37,13 @@ a:active { color: rgb(0, 140, 255);}
     color: #d63c42;
 }
 .black-link:link:active {
-    color: rgb(27, 0, 199);
-}
+    color: rgb(0, 140, 255);}
+
 .black-link:visited:active {
-    color: rgb(27, 0, 199);
-}
+    color: rgb(0, 140, 255);}
+
 .black-link:active {
-    color: rgb(27, 0, 199);
-}
+    color: rgb(0, 140, 255);}
 @media only screen and (max-width: 600px) {
     p {
         font-size: 12px;
@@ -275,24 +274,26 @@ img.plus-side-net-nav:active {
     padding-right: 20px;
     box-shadow: 0 0 3px 0 #d63c42;;
         transition: .3s;
-        border-block-color: #d63c42;;
+        border-inline-color: rgb(4, 217, 255);
+        border-block-color: #d63c42;
         border-style: double;
         border-block-style: groove;
        border-block-width: thick;
        
 }
 .article-read:hover {
-    box-shadow: 2px 2px 5px 1px rgb(0, 43, 4);
     border-style: double;
     font-family: 'Oswald';
-    color: rgb(60, 42, 177);
-    border-inline-color: slateblue;
-        border-style: double;
+    color: rgb(149, 208, 247);
+        box-shadow: 2px 2px 5px 1px #d63c42;
+    border-inline-color:  rgb(4, 217, 255);
+    border-style: double;
         border-block-style: groove;
        border-block-width: thick;
 }
 .article-read:active {
-    color: rgb(27, 0, 199);
+    box-shadow: 4px 4px 7px 3px  #d63c42;
+    color: rgb(0, 140, 255);
 }
 .article-style {
     flex-direction: row;
@@ -403,7 +404,7 @@ img.plus-side-net-nav:active {
     color: #d63c42;
 }
 .articleLink:hover {
-    color: slateblue;
+    color: rgb(149, 208, 247);
 }
 .articleLink:active {
     color: rgb(0, 140, 255);}
@@ -411,7 +412,7 @@ img.plus-side-net-nav:active {
     color: #d63c42;
 }
 #articleLink:hover {
-    color: slateblue;
+    color: rgb(149, 208, 247);
 }
 #articleLink:active {
     color: rgb(0, 140, 255);}
@@ -565,6 +566,13 @@ img.plus-side-net-nav:active {
 }
 .past-events-title{
     text-align: center;
+    color: black;
+}
+.past-events-title:hover{
+    color: #d63c42;
+}
+.past-events-title:active {
+    color: rgb(0, 140, 255);
 }
 .vods-past {
     font-size: 30px;
