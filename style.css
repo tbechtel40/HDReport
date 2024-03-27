@@ -675,8 +675,9 @@ img.article-potential-characters {
     position: absolute;
     top: 0;
     left: 0;
-    width: 99%;
-    height: 99%;
+    width: 97%;
+    height: 97%;
+    border-color: #d63c42;
 }
 .past-events-drop {
     display: inline-block;
