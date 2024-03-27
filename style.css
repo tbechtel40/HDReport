@@ -657,13 +657,18 @@ img.article-potential-characters {
     height: 635px;
 }
 .video-con {
+    display: flex;
     position: relative;
+    width: 75%;
     padding-bottom: 56.25%;
     padding-top: 30px; 
     height: 0; 
     overflow: hidden;
+    margin-bottom: 30px;
 }
-
+.streamBody {
+    margin-left: 20%;
+}
 .video-con iframe,
 .video-con object,
 .video-con embed {
@@ -1102,6 +1107,14 @@ label.lead {
 }
 @media only screen and (max-width: 767px) {
     
+    p.streamNames {
+        color: white;
+        font-size: large;
+        text-align: center;
+        margin-right: 25%;
+        margin-bottom: 1%;
+}
+
     div.calViewListContainer {
         margin: 0 0px 0 30px;
 
@@ -1140,10 +1153,14 @@ button.calViewList {
     margin: 0 0px 0 70px;
     display: flex;
     justify-content: center;
-
 }
-#map_holder {
-    display: block;
-    width: 500px;
-    height: 500px;
+.streamNames {
+        color: white;
+        font-size: xx-large;
+        text-align: center;
+        margin-right: 25%;
+        margin-bottom: 1%;
+}
+div#map {
+    display: flex;
 }
