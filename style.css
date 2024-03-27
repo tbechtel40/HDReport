@@ -1165,3 +1165,6 @@ button.calViewList {
 div#map {
     display: flex;
 }
+div#map_holder {
+    display: flex;
+}
