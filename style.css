@@ -1162,9 +1162,3 @@ button.calViewList {
         margin-right: 25%;
         margin-bottom: 1%;
 }
-div#map {
-    display: flex;
-}
-div#map_holder {
-    display: flex;
-}
