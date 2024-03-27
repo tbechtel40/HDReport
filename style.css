@@ -1151,7 +1151,7 @@ button.calViewList {
     margin-bottom: 6%;
 }
 .calViewListContainer {
-    margin: 0 0px 0 70px;
+    margin: 0 0px 0 0px;
     display: flex;
     justify-content: center;
 }
