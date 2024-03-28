@@ -1162,3 +1162,6 @@ button.calViewList {
         margin-right: 25%;
         margin-bottom: 1%;
 }
+.maxUnset {
+    max-width: unset;
+}
