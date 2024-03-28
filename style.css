@@ -1165,3 +1165,21 @@ button.calViewList {
 .maxUnset {
     max-width: unset;
 }
+.blue-link:link {
+    color: rgb(0, 140, 255);
+}
+.blue-link:visited {
+    color: rgb(0, 140, 255);
+}
+.blue-link {
+    color: rgb(0, 140, 255);
+}
+.blue-link:link:active {
+    color: #d63c42;
+}
+.blue-link:visited:active {
+    color: #d63c42;
+}
+.blue-link:active {
+    color: #d63c42;
+}
