@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html>
-  <script src="mapdata.js"></script>
-  <script src="worldmap.js"></script>
   <meta charset="UTF-8">  
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
  <head>
@@ -10,6 +8,25 @@
   <link rel="icon" type="image/x-icon" href="https://github.com/pkzstar/HDReport/blob/main/images/logo-main.png?raw=true">
     <link rel="stylesheet" href="style.css">
     <style>
+        .hidden {
+    display: none;
+  }
+            @media only screen and (max-width:600px) {
+        .pm-rank {
+          position: relative;
+    float: unset;
+}
+.events {
+  margin: 20px 20px 20px 20px;
+}
+.eventsList {
+  list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+      }
 @media only screen and (max-width: 767px) {
      .pastList {
       list-style: none;
@@ -74,21 +91,84 @@ p {
     <h1 id="pageHeader" class="textGradient">LOCAL SCENES</h1>
   </div>
   <div id="map"></div>
+  <div id="mobileLinks" class="events hidden"></div>
 
 
 
-        <script type="text/javascript" src="http://yoursite.com/mapdata.js"></script>		
-        <script  type="text/javascript" src="http://yoursite.com/worldmap.js"></script>
+  <script>
+  // Function to conditionally load scripts based on width
+        function loadScripts() {
+            // Check if the window width is less than or equal to 800px
+            if (window.innerWidth >= 700) {
+                var mapScript = document.createElement('script');
+                mapScript.src = 'mapdata.js';
+                document.body.appendChild(mapScript);
+
+                var worldMapScript = document.createElement('script');
+                worldMapScript.src = 'worldmap.js';
+                document.body.appendChild(worldMapScript);
+
+                console.log("Scripts loaded successfully for width <= 800px.");
+            } else {
+                console.log("Window width is greater than 800px, scripts not loaded.");
+            }
+        }
+
+        // Call the function when the page is loaded
+        window.onload = loadScripts;
+         </script>
+
+<script>
+  // Check if the page width is less than or equal to 700 pixels
+  if (window.innerWidth <= 700) {
+    // Create the HTML content to be injected
+    let mobileLinksHTML = `
+      <a class="black-link" href="https://discord.com/invite/65RUuFwJyU">California</a><br>
+      <a class="black-link" href="https://discord.com/invite/CyEZgpxr">California - High Desert</a><br>
+      <a class="black-link" href="https://discord.com/invite/czNcduQbQd">Canada Alberta</a><br>
+      <a class="black-link" href="https://discord.com/invite/Tk7hNR9">Florida - Jacksonville</a><br>
+      <a class="black-link" href="https://discord.com/invite/eUysA7Rs7C">France</a><br>
+      <a class="black-link" href="https://discord.com/invite/cbH2Z8YnfK">Illinois</a><br>
+      <a class="black-link" href="https://discord.com/invite/Z5e8BM7QFU">Missouri - St. Louis</a><br>
+      <a class="black-link" href="https://discord.gg/s3m23B7Z">Nebraska</a><br>
+      <a class="black-link" href="https://discord.com/invite/xB64j7zCn4">New England</a><br>
+      <a class="black-link" href="https://discord.com/invite/bGMBrfbw">North Carolina</a><br>
+      <a class="black-link" href="https://discord.com/invite/WQKFJNp">New York - Upstate</a><br>
+      <a class="black-link" href="https://discord.com/invite/m2fJvZve">Oklahoma</a><br>
+      <a class="black-link" href="https://discord.com/invite/yWNuKkmFZ7">Ontario</a><br>
+      <a class="black-link" href="https://discord.com/invite/cbH2Z8YnfK">Oregon</a><br>
+      <a class="black-link" href="https://discord.com/invite/D3pYTkRc">Spain</a><br>
+      <a class="black-link" href="https://discord.com/invite/r9szDb7sPS">Tennessee - Northeast</a><br>
+      <a class="black-link" href="https://discord.com/invite/TwJbpwGyCe">Texas</a><br>
+      <a class="black-link" href="https://discord.gg/jvKA8254YT">Tristate</a><br>
+      <a class="black-link" href="https://discord.com/invite/qCGC8w5A">United Kingdom</a><br>
+      <a class="black-link" href="">Washington</a><br>
+    `;
+  
+    // Get the mobileLinks container and inject the HTML
+    let mobileLinksContainer = document.getElementById('mobileLinks');
+    mobileLinksContainer.innerHTML = mobileLinksHTML;
+  }
+  window.addEventListener('resize', function() {
+        let element = document.getElementById('mobileLinks');
+        let width = window.innerWidth;
+
+        if (width <= 700) {
+            element.classList.remove('hidden');
+        } else {
+            element.classList.add('hidden');
+        }
+    });
+
+    // Check on initial load
+    window.dispatchEvent(new Event('resize'));
+  </script>
+
         <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
         <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
         <script src="react-templates\nav-bar\build\static\js\main.f5d4c7e5.js"></script>
         <script src="/script.js"></script>
-        <script>
-          // Call initMap when the page finishes loading
-          document.addEventListener('DOMContentLoaded', () => {
-            initMap();
-          });
-        </script>
+
         
  </body>
 </html>

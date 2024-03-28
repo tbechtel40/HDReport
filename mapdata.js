@@ -1063,5 +1063,4 @@ var simplemaps_worldmap_mapdata={
       description: "https://discord.com/invite/s8SqY36etB",
       url: "https://discord.com/invite/s8SqY36etB"
     }
-  }
-    };
+  }};
