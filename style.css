@@ -734,6 +734,10 @@ margin-left: 300px;
         font-size: 12px;
         margin-top: 10px;
         }
+        iframe {
+            height: 250px;
+            width: 310px;
+        }
  }
 .past-events-drop .past-events-drop-btn {
     cursor: pointer;
