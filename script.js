@@ -116,6 +116,24 @@ function showCalendar(month, year) {
                 link.appendChild(image);
                 cell.appendChild(link);
 
+                      //SuperTps
+                    } else if (month === 4 && (date === 24) && year === 2024) {
+
+
+                        let link = document.createElement("a");
+                        link.href = "https://www.start.gg/tournament/tripoint-smash-presents-super-tps-iii/details";
+                        link.target = "_blank";
+    
+                        let image = document.createElement("img");
+                        image.src = "https://github.com/pkzstar/plus-side/blob/main/images/upcoming%20events/supertps.png?raw=true";
+    
+                        image.classList.add("calendarImg");
+    
+    
+                        link.appendChild(image);
+                        cell.appendChild(link);
+    
+
                 } else {
                     // Create and append the date text only if there is no image
                     cellText = document.createTextNode(date);
