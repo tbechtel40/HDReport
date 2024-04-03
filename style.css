@@ -656,29 +656,58 @@ img.article-potential-characters {
     width: 75%;
     height: 635px;
 }
-.video-con {
-    display: flex;
-    position: relative;
-    width: 75%;
-    padding-bottom: 56.25%;
-    padding-top: 30px; 
-    height: 0; 
-    overflow: hidden;
-    margin-bottom: 30px;
+#wplStream {
+    margin-left: 250px;
 }
+#ycStream {
+    margin-left: 25px;
+}
+#rcStream {
+    margin-left: 75px;
+}
+#uwcStream {
+margin-left: 250px;
+}
+#dfwStream {
+
+}
+#kumaStream {
+margin-left: 300px;
+}
+
 .streamBody {
-    margin-left: 20%;
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+
+.video-column {
+  flex-grow: 1;
+}
+.video-con {
+  margin-bottom: 20px;
+  width: 30%;
+  height: 25%;
+}
+.streamNamesContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+.streamNames {
+        display: inline-flex;
+        color: white;
+        font-size: xx-large;
+        text-align: center;
+        margin-bottom: 1%;
+        text-align: center;
 }
 .video-con iframe,
 .video-con object,
 .video-con embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 97%;
-    height: 97%;
-    border-color: #d63c42;
+  width: 100%;
+  border-color: #d63c42;
 }
+
 .past-events-drop {
     display: inline-block;
     overflow: hidden;
@@ -1154,13 +1183,6 @@ button.calViewList {
     margin: 0 0px 0 0px;
     display: flex;
     justify-content: center;
-}
-.streamNames {
-        color: white;
-        font-size: xx-large;
-        text-align: center;
-        margin-right: 25%;
-        margin-bottom: 1%;
 }
 .maxUnset {
     max-width: unset;

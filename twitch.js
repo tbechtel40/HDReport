@@ -1,4 +1,4 @@
-const clientId = 'jzi4wknhgac3jdhie2s5i5y14uffp0';
+const clientId = '';
 const streamerLogin = 'yachtclubhq';
 
 fetch(`https://api.twitch.tv/helix/streams?user_login=${streamerLogin}`, {
