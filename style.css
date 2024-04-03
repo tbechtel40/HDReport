@@ -604,6 +604,25 @@ img.plus-side-net-nav:active {
         margin: unset;
         margin: 5%;
     }
+    div#streamsMobile {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    p.streamNames {
+        color: white;
+        font-size: large;
+        text-align: center;
+        margin-bottom: 1%;
+}
+div.video-con {
+    margin-left: 15%;
+    margin-bottom: 20px;
+    width: 75%;
+  }
+}
+.hidden {
+    display: none;
 }
 .vods-past:hover {
         border-style: double;
@@ -668,9 +687,6 @@ img.article-potential-characters {
 #uwcStream {
 margin-left: 250px;
 }
-#dfwStream {
-
-}
 #kumaStream {
 margin-left: 300px;
 }
@@ -680,7 +696,6 @@ margin-left: 300px;
   gap: 20px;
   justify-content: space-evenly;
 }
-
 .video-column {
   flex-grow: 1;
 }
@@ -761,6 +776,22 @@ margin-left: 300px;
         flex: 1;
         width: fit-content;
         height: auto;
+    }
+    #wplStream {
+        margin-left: unset;
+    }
+    #ycStream {
+        margin-left: unset;
+    }
+    #rcStream {
+        margin-left: unset;
+    }
+    #uwcStream {
+        margin-left: unset;
+    
+    }
+    #kumaStream {
+        margin-left: unset;
     }
  }
 .dropdown-content {
@@ -1137,14 +1168,6 @@ label.lead {
 }
 @media only screen and (max-width: 767px) {
     
-    p.streamNames {
-        color: white;
-        font-size: large;
-        text-align: center;
-        margin-right: 25%;
-        margin-bottom: 1%;
-}
-
     div.calViewListContainer {
         margin: 0 0px 0 30px;
 

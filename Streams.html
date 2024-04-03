@@ -72,66 +72,95 @@ p {
     <hr>
 
     <div id="react-container"></div>
-  <div class="video-column">
+    <div id="streamsDesktop" class="hidden"></div>
+    <div id="streamsMobile"></div>
 
 
-      <div class="streamNamesContainer">
-      <p id="ycStream" class="streamNames"><a target="_blank" href="https://www.twitch.tv/yachtclubhq">yachtclubhq</a></p>
-      <p id="wplStream" class="streamNames"><a target="_blank" href="https://www.twitch.tv/waypoint_lounge">waypoint lounge</a></p>
-      </div>
-   
 
-    <div class="streamBody">
-      <div class="video-con">
-        <iframe src="https://player.twitch.tv/?channel=yachtclubhq&parent=hdr.report" frameborder="1" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
-      </div>
-      <div class="video-con">
-        <iframe src="https://player.twitch.tv/?channel=waypoint_lounge&parent=hdr.report" frameborder="1" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
-      </div>
-    </div>
-
-
-    
-    <div class="streamNamesContainer">
-      <p id="rcStream" class="streamNames"><a target="_blank" href="https://www.twitch.tv/recupid">recupid</a></p>
-      <p id="uwcStream" class="streamNames"><a target="_blank" href="https://www.twitch.tv/uwbothellsmashclub">uwbothellsmashclub</a></p>
-    </div>
-
-    <div class="streamBody">
-    <div class="video-con">
-      <iframe src="https://player.twitch.tv/?channel=recupid&parent=hdr.report" frameborder="1" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
-    </div>
-    <div class="video-con">
-      <iframe src="https://player.twitch.tv/?channel=uwbothellsmashclub&parent=hdr.report" frameborder="1" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
-    </div>
-  </div>
-
-  <div class="streamNamesContainer">
-    <p id="dfwStream" class="streamNames"><a target="_blank" href="https://www.twitch.tv/dfw_esportsgg">dfw</a></p>
-    <p id="kumaStream" class="streamNames"><a target="_blank" href="https://www.twitch.tv/kumatoraam">kumatora</a></p>
-</div>
-
-<div class="streamBody">
-    <div class="video-con">
-      <iframe src="https://player.twitch.tv/?channel=dfw_esportsgg&parent=hdr.report" frameborder="1" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
-    </div>
-    <div class="video-con">
-      <iframe src="https://player.twitch.tv/?channel=kumatoraam&parent=hdr.report" frameborder="1" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
-    </div>
-</div>
-
-<div class="streamNamesContainer">
-    <p id="onStream" class="streamNames"><a target="_blank" href="https://www.twitch.tv/ONHDR">onhdr</a></p>
-  </div>
-
-  <div class="streamBody">
-    <div class="video-con">
-      <iframe src="https://player.twitch.tv/?channel=onhdr&parent=hdr.report" frameborder="1" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
-    </div>
-  </div>
-
-        <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
-        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script>
+      // Function to conditionally load scripts based on width
+      function loadScripts() {
+    const streamsDesktop = document.getElementById('streamsDesktop');
+// Check if the window width is less than or equal to 700px
+if (window.innerWidth >= 700) {
+// Add the "hidden" class to the streamsDesktop div
+streamsDesktop.classList.remove('hidden');
+}}
+  
+      // Function to create stream elements
+      function createStreamElement(name, url, channelId) {
+          const streamName = document.createElement('p');
+          streamName.classList.add('streamNames');
+          const link = document.createElement('a');
+          link.setAttribute('target', '_blank');
+          link.setAttribute('href', url);
+          link.textContent = name;
+          streamName.appendChild(link);
+  
+          const streamId = document.createElement('p');
+          streamId.classList.add('streamNames');
+          streamId.id = channelId;
+  
+          const videoContainer = document.createElement('div');
+          videoContainer.classList.add('video-con');
+          const iframe = document.createElement('iframe');
+          iframe.setAttribute('src', `https://player.twitch.tv/?channel=${channelId}&parent=hdr.report`);
+          iframe.setAttribute('frameborder', '1');
+          iframe.setAttribute('allowfullscreen', 'true');
+          iframe.setAttribute('scrolling', 'no');
+          iframe.setAttribute('height', '378');
+          iframe.setAttribute('width', '620');
+  
+          videoContainer.appendChild(iframe);
+  
+          return [streamName, streamId, videoContainer];
+      }
+  
+      // Check if the page width is less than or equal to 700 pixels
+      if (window.innerWidth <= 700) {
+          // Get the mobileLinks container
+          const mobileLinksContainer = document.getElementById('streamsMobile');
+  
+          // Add streams
+          const streamsData = [
+              { name: 'yachtclubhq', url: 'https://www.twitch.tv/yachtclubhq', channelId: 'ycStream' },
+              { name: 'waypoint lounge', url: 'https://www.twitch.tv/waypoint_lounge', channelId: 'wplStream' },
+              { name: 'recupid', url: 'https://www.twitch.tv/recupid', channelId: 'rcStream' },
+              { name: 'uwbothellsmashclub', url: 'https://www.twitch.tv/uwbothellsmashclub', channelId: 'uwcStream' },
+              { name: 'dfw esports', url: 'https://www.twitch.tv/dfw_esportsgg', channelId: 'dfwStream' },
+              { name: 'kumatoraam', url: 'https://www.twitch.tv/kumatoraam', channelId: 'kumaStream' },
+              { name: 'onhdr', url: 'https://www.twitch.tv/ONHDR', channelId: 'onStream' }
+          ];
+  
+          streamsData.forEach(stream => {
+              const [streamName, streamId, videoContainer] = createStreamElement(stream.name, stream.url, stream.channelId);
+              mobileLinksContainer.appendChild(streamName);
+              mobileLinksContainer.appendChild(streamId);
+              mobileLinksContainer.appendChild(videoContainer);
+          });
+  
+          // Show/hide mobileLinks container based on window width
+          window.addEventListener('resize', function () {
+              let element = document.getElementById('streamsMobile');
+              let width = window.innerWidth;
+  
+              if (width <= 700) {
+                  element.classList.remove('hidden');
+              } else {
+                  element.classList.add('hidden');
+              }
+          });
+  
+          // Check on initial load
+          window.dispatchEvent(new Event('resize'));
+      }
+  
+      // Call loadScripts function after defining it
+      window.onload = loadScripts;
+  </script>
+  
+  
+        <script src="streamsDesktop.js"></script>
         <script src="/react-templates\past-events-template\build\static\js\main.c55309bd.js"></script>
         <script src="react-templates\nav-bar\build\static\js\main.f5d4c7e5.js"></script>
         <script src="/script.js"></script>
