@@ -85,15 +85,6 @@ function createEventComponent(eventData) {
 const eventsData = [
 
     {
-        name: "[bae]",
-        date: "03/30/2024",
-        location: "Bethlehem, PA, USA",
-        description: "",
-        imageUrl: "https://github.com/pkzstar/HDReport/blob/main/images/upcoming%20events/bae.png?raw=true",
-        link: "https://www.start.gg/tournament/bae-03-2024/details",
-        rankImg: false
-    },
-    {
         name: "Shenanigames 4",
         date: "05/04/2024",
         location: "Sapulpa, OK, USA",
