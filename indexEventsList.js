@@ -86,7 +86,7 @@ const eventsData = [
 
     {
         name: "Shenanigames 4",
-        date: "05/04/2024",
+        date: "05/04/24",
         location: "Sapulpa, OK, USA",
         description: "Shenanigames returns and everyone is invited! The goal here is to mainly relax, chill with the homies, and have a ball! While we'll still run competitive stuff during the day, the main point of the event is to stay for the after party for we won't be closing doors until 4am! The Waypoint Lounge is the Tulsa metro-area's premiere destination for gaming and esports. Located in the town of Sapulpa, it features a state of the art production facility with a 36-ft spectator screen, a wide selection of board and video games, and a Japanese-German fusion bar and kitchen menu!",
         imageUrl: "https://github.com/pkzstar/HDReport/blob/main/images/upcoming%20events/Shenanigames%204.png?raw=true",
@@ -95,13 +95,22 @@ const eventsData = [
     },
     {
         name: "Ghost Town 2",
-        date: "05/11/2024",
+        date: "05/11/24",
         location: "Portland, OR, USA",
         description: "Portland's fighting game community will be renting out a 500 person capacity event room inside of the Lloyd Center in the middle of NE Portland.",
         imageUrl: "https://github.com/pkzstar/HDReport/blob/main/images/upcoming%20events/Ghost%20Town%202.png?raw=true",
         link: "https://www.start.gg/tournament/ghost-town-2-call-of-the-lloyd-ft-zamu-spark/details",
         rankImg: false
-    },      
+    },
+    {
+        name: "Game 5 In The D #3",
+        date: "05/18/24",
+        location: "Detroit, MI, USA",
+        description: "We welcome all valiant competitors to our local P+ scene's return-to-form! Featuring a professional stream, custom tournament badges, your favorite players, and much, much more, this will be an event you won't want to miss!",
+        imageUrl: "https://github.com/pkzstar/plus-side/blob/main/images/past-events/game5In.png?raw=true",
+        link: "https://www.start.gg/tournament/game-5-in-the-d-3-1/details",
+        rankImg: false
+      },      
     {
       name: "Super TPS III",
       date: "5/24/24",

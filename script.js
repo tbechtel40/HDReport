@@ -116,6 +116,22 @@ function showCalendar(month, year) {
                 link.appendChild(image);
                 cell.appendChild(link);
 
+                  //Game 5 in the D
+             } else if(month === 4 && date === 18 && year === 2024) {
+                // Example link with image
+                let link = document.createElement("a");
+                link.href = "https://www.start.gg/tournament/game-5-in-the-d/details";
+                link.target = "_blank";
+            
+                let image = document.createElement("img");
+                image.src = "https://github.com/pkzstar/plus-side/blob/main/images/past-events/game5In.png?raw=true";
+            
+                image.classList.add("calendarImg");
+            
+            
+                link.appendChild(image);
+                cell.appendChild(link);
+            
                       //SuperTps
                     } else if (month === 4 && (date === 24) && year === 2024) {
 
