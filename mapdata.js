@@ -941,8 +941,8 @@ var simplemaps_worldmap_mapdata={
       lat: "36.084621",
       lng: "-96.921387",
       name: "Oklahoma",
-      description: "https://discord.com/invite/m2fJvZve",
-      url: "https://discord.com/invite/m2fJvZve"
+      description: "https://discord.com/invite/HV6KpFC3D2",
+      url: "https://discord.com/invite/HV6KpFC3D2"
     },
     "3": {
       lat: "42.09884",
