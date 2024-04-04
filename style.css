@@ -43,7 +43,7 @@ body {
     animation: scrollAnimation 30s linear infinite;
 }
 @media only screen and (max-width: 767px) {
-    body {
+    .wallpaper .wallpaper2 {
         background-size: 75%;
     }
 }
