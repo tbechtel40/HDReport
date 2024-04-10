@@ -94,6 +94,15 @@ const eventsData = [
         rankImg: false
     },
     {
+      name: "Creed III",
+      date: "5/11/24",
+      location: "Philadelphia, PA, USA",
+      imageUrl: "https://github.com/pkzstar/plus-side/blob/main/images/upcoming%20events/creed.png?raw=true",
+      link: "https://www.start.gg/tournament/creed-iii/details",
+      rankImg: false
+
+    }, 
+    {
         name: "Ghost Town 2",
         date: "05/11/24",
         location: "Portland, OR, USA",

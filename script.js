@@ -100,21 +100,68 @@ function showCalendar(month, year) {
                 link.appendChild(image);
                 cell.appendChild(link);
 
-                //Ghost town 2
-             }else if(month === 4 && date === 11 && year === 2024) {
-                // Example link with image
-                let link = document.createElement("a");
-                link.href = "https://www.start.gg/tournament/ghost-town-2-call-of-the-lloyd-ft-zamu-spark/details";
-                link.target = "_blank";
+        //Ghost Town and creed
+      } else if (month === 4 && (date === 11) && year === 2024) { 
+                    
+        const events = [
 
-                let image = document.createElement("img");
-                image.src = "https://github.com/pkzstar/HDReport/blob/main/images/upcoming%20events/Ghost%20Town%202.png?raw=true";
+        {   
+            link: "https://www.start.gg/tournament/ghost-town-2-call-of-the-lloyd-ft-zamu-spark/details",
+            imageSrc: "https://raw.githubusercontent.com/pkzstar/plus-side/main/images/past-events/ghost-town.png"
+            
+        },
+        {
+            link: "https://www.start.gg/tournament/creed-iii/details",
+            imageSrc: "https://github.com/pkzstar/plus-side/blob/main/images/upcoming%20events/creed.png?raw=true"
+        }
+    ];
 
-                image.classList.add("calendarImg");
+
+    let currentIndex = 0; // Initialize current index
+    let link = document.createElement("a");
+    link.target = "_blank";
+
+    let image = document.createElement("img");
+
+    image.classList.add("calendarImg");
 
 
-                link.appendChild(image);
-                cell.appendChild(link);
+    link.appendChild(image);
+    cell.appendChild(link);
+
+    // Function to fade in/out the image and link
+    function fadeInOut(element) {
+        let opacity = 0;
+        let increasing = true;
+        let interval = setInterval(function() {
+            if (increasing) {
+                opacity += 0.05;
+            } else {
+                opacity -= 0.05;
+            }
+            element.style.opacity = opacity;
+            if (opacity >= 1) {
+                increasing = false;
+                setTimeout(() => {
+                    increasing = true;
+                    updateLinkAndImage(); // Update link and image after fully visible
+                }, 2000); // Image and link will be fully visible for 2 seconds before fading out
+            } else if (opacity <= 0) {
+                clearInterval(interval);
+                fadeInOut(element); // Restart the fading animation
+            }
+        }, 100); // Adjust the timing as needed
+    }
+
+    // Function to update the link and image
+    function updateLinkAndImage() {
+        link.href = events[currentIndex].link;
+        image.src = events[currentIndex].imageSrc;
+        currentIndex = (currentIndex + 1) % events.length; // Move to the next event, looping back to the beginning if necessary
+    }
+
+    updateLinkAndImage(); // Initially update link and image
+    fadeInOut(image); // Start fade-in/out animation // Start cycling events
 
 
                      //Get Out of My Venue & Game 5 in the D
