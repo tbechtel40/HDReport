@@ -103,6 +103,15 @@ const eventsData = [
         rankImg: false
     },
     {
+      name:"Get Out of My Venue",
+      date: "5/17/24 - 5/18/24",
+      location: "Toronto, ON, Canada",
+      description: "HDR/P+ SILLY MAJOR AT GOML. P+ - FRIDAY NIGHT 6:30 - FINISH - BO3 UNTIL TOP 8. HDR- SATURDAY NIGHT 8:30 - FINISH - BO3 UNTIL TOP 8. Times subject to change depending on GOML schedule.  HDR will be on Nightly unless the Smashline 2 update is pushed to beta. 2 week cutoff for nightly patch.",
+      imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Flag_of_Canada_%28leaf%29.svg/630px-Flag_of_Canada_%28leaf%29.svg.png",
+      link: "https://www.start.gg/tournament/get-out-of-my-venue/details",
+      rankImg: false
+    },
+    {
         name: "Game 5 In The D #3",
         date: "05/18/24",
         location: "Detroit, MI, USA",
