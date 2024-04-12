@@ -258,6 +258,38 @@ function showCalendar(month, year) {
                         link.appendChild(image);
                         cell.appendChild(link);
     
+                              //invincible
+             } else if(month === 5 && date === 1 && year === 2024) {
+                // Example link with image
+                let link = document.createElement("a");
+                link.href = "https://www.start.gg/tournament/invincible-viii/details";
+                link.target = "_blank";
+            
+                let image = document.createElement("img");
+                image.src = "https://raw.githubusercontent.com/pkzstar/plus-side/main/images/upcoming%20events/invincible8.png";
+            
+                image.classList.add("calendarImg");
+            
+            
+                link.appendChild(image);
+                cell.appendChild(link);
+
+                
+            } else if(month === 5 &&  date === 2 && year === 2024) {
+                // Example link with image
+                let link = document.createElement("a");
+                link.href = "https://www.start.gg/tournament/invincible-viii/details";
+                link.target = "_blank";
+            
+                let image = document.createElement("img");
+                image.src = "https://raw.githubusercontent.com/pkzstar/plus-side/main/images/upcoming%20events/invincible8.png";
+            
+                image.classList.add("calendarImg");
+            
+            
+                link.appendChild(image);
+                cell.appendChild(link);
+
 
                 } else {
                     // Create and append the date text only if there is no image

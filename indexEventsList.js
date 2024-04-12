@@ -138,6 +138,15 @@ const eventsData = [
       link: "https://www.start.gg/tournament/tripoint-smash-presents-super-tps-iii/details",
       rankImg: false
     },
+    {
+      name: "Invincible VIII",
+      date: "6/1/24 - 6/2/24",
+      location: "Madison, WI, USA",
+      description: "10,000+ Square Feet Heart of downtown Madison, in walking distance of great restaurants & entertainment. Attached hotel, additional hotels close by Flying in Dane County Regional Airport (MSN) is located 20 minutes away from Union South by car Cheaper flights can be found to General Mitchell Airport (MKE) or O'Hare International Airport (ORD) If flying into O'Hare you can take the Van Galder bus",
+      imageUrl: "https://github.com/pkzstar/plus-side/blob/main/images/upcoming%20events/invincible8.png?raw=true",
+      link: "https://www.start.gg/tournament/invincible-viii/details",
+      rankImg: false
+    },
 
     ];
 
