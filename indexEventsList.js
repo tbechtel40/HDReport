@@ -147,6 +147,15 @@ const eventsData = [
       link: "https://www.start.gg/tournament/invincible-viii/details",
       rankImg: false
     },
+    {
+      name: "Undertow 2024",
+      date: "9/6/24 - 9/9/24",
+      location: "Sandusky, OH, USA",
+      description: "Thanks to the dedication of the Midwest Project+ and HDR communities, we're proud to continue the water park shadow major tradition in 2024!",
+      imageUrl: "https://github.com/pkzstar/plus-side/blob/main/images/upcoming%20events/undertow2024.png?raw=true",
+      link: "https://www.start.gg/tournament/undertow-2024/details",
+      rankImg: false
+    },
 
     ];
 
