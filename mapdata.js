@@ -1056,11 +1056,18 @@ var simplemaps_worldmap_mapdata={
       description: "https://discord.com/invite/czNcduQbQd",
       url: "https://discord.com/invite/czNcduQbQd"
     },
-    paris: {
+    "19": {
       name: "Nebraska",
       lat: "40.806862",
       lng: "-96.681679",
       description: "https://discord.com/invite/s8SqY36etB",
       url: "https://discord.com/invite/s8SqY36etB"
-    }
+  },
+  "20": {
+    name: "Arizona",
+    lat: "34.048927",
+    lng: "-111.093735",
+    description: "https://t.co/n5c8b1xhaO",
+    url: "https://t.co/n5c8b1xhaO"
+  }
   }};
