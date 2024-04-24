@@ -148,6 +148,15 @@ const eventsData = [
       rankImg: false
     },
     {
+      name: "SUPER CLOUDY SCUFFLE",
+      date: "6/22/24",
+      location: "Oshawa, ON, Canada",
+      description: "Karamel is proud to present: SUPER CLOUDY SCUFFLE! A Durham Regional 🐈 In collaboration with No Style Esports, ft. Ultimate, Melee, Rivals of Aether 2, Project+ and HDR This tournament is dedicated to Karamel's late cat, Cloudy. Her likeness appearing in every iteration of any event hosted by them, hidden in Ontario twitch emotes, and making cameos in many livestreams. This tournament is a final send off for her. Please feel free to take Cloudy merch off of the floor, tables and chair throughout the event.",
+      imageUrl: "https://github.com/pkzstar/HDReport/blob/main/images/upcoming%20events/super%20cloudy%20scuffle.png?raw=true",
+      link: "https://www.start.gg/tournament/super-cloudy-scuffle-a-durham-regional/details",
+      rankImg: false
+    },
+    {
       name: "Undertow 2024",
       date: "9/6/24 - 9/9/24",
       location: "Sandusky, OH, USA",

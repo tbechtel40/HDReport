@@ -290,6 +290,22 @@ function showCalendar(month, year) {
                 link.appendChild(image);
                 cell.appendChild(link);
 
+                //SUPER CLOUDY SCUFFLE
+            } else if(month === 5 &&  date === 22 && year === 2024) {
+                // Example link with image
+                let link = document.createElement("a");
+                link.href = "https://www.start.gg/tournament/super-cloudy-scuffle-a-durham-regional/details";
+                link.target = "_blank";
+            
+                let image = document.createElement("img");
+                image.src = "https://github.com/pkzstar/HDReport/blob/main/images/upcoming%20events/super%20cloudy%20scuffle.png?raw=true";
+            
+                image.classList.add("calendarImg");
+            
+            
+                link.appendChild(image);
+                cell.appendChild(link);
+
 
                 //Undertow 2024
             } else if (month === 8 && (date === 6 || date === 7 || date === 8) && year === 2024) {
