@@ -148,6 +148,15 @@ const eventsData = [
       rankImg: false
     },
     {
+      name: "The Black Market",
+      date: "6/22/24",
+      location: "Calgary, AB, Canada",
+      description: "A celebration of Smash Bros. fan games!Featuring HDR Singles, HDR Doubles and P+ Singles as paid events, along with plenty of free side events such as HDR Amateur brackets, Smash Remix, Rivals of Aether and Sonic Adventure 2!",
+      imageUrl: "https://github.com/pkzstar/plus-side/blob/main/images/upcoming%20events/blackmarket.png?raw=true",
+      link: "https://www.start.gg/tournament/the-black-market/details",
+      rankImg: false
+    },
+    {
       name: "SUPER CLOUDY SCUFFLE",
       date: "6/22/24",
       location: "Oshawa, ON, Canada",
