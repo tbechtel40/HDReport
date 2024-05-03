@@ -1032,8 +1032,8 @@ var simplemaps_worldmap_mapdata={
       lat: "44.000000",
       lng: "-120.500000",
       name: "Oregon",
-      description: "https://discord.com/invite/cbH2Z8YnfK",
-      url: "https://discord.com/invite/cbH2Z8YnfK"
+      description: "https://discord.com/invite/z7ZCfCWACU",
+      url: "https://discord.com/invite/z7ZCfCWACU"
     },
     "16": {
       lat: "48.887691",
