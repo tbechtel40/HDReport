@@ -84,15 +84,7 @@ function createEventComponent(eventData) {
 // Sample event data (replace this with actual event data)
 const eventsData = [
 
-    {
-        name: "Shenanigames 4",
-        date: "05/04/24",
-        location: "Sapulpa, OK, USA",
-        description: "Shenanigames returns and everyone is invited! The goal here is to mainly relax, chill with the homies, and have a ball! While we'll still run competitive stuff during the day, the main point of the event is to stay for the after party for we won't be closing doors until 4am! The Waypoint Lounge is the Tulsa metro-area's premiere destination for gaming and esports. Located in the town of Sapulpa, it features a state of the art production facility with a 36-ft spectator screen, a wide selection of board and video games, and a Japanese-German fusion bar and kitchen menu!",
-        imageUrl: "https://github.com/pkzstar/HDReport/blob/main/images/upcoming%20events/Shenanigames%204.png?raw=true",
-        link: "https://www.start.gg/tournament/shenanigames-4/details",
-        rankImg: false
-    },
+
     {
       name: "Creed III",
       date: "5/11/24",
@@ -163,6 +155,15 @@ const eventsData = [
       description: "Karamel is proud to present: SUPER CLOUDY SCUFFLE! A Durham Regional 🐈 In collaboration with No Style Esports, ft. Ultimate, Melee, Rivals of Aether 2, Project+ and HDR This tournament is dedicated to Karamel's late cat, Cloudy. Her likeness appearing in every iteration of any event hosted by them, hidden in Ontario twitch emotes, and making cameos in many livestreams. This tournament is a final send off for her. Please feel free to take Cloudy merch off of the floor, tables and chair throughout the event.",
       imageUrl: "https://github.com/pkzstar/HDReport/blob/main/images/upcoming%20events/super%20cloudy%20scuffle.png?raw=true",
       link: "https://www.start.gg/tournament/super-cloudy-scuffle-a-durham-regional/details",
+      rankImg: false
+    },
+    {
+      name: "Terminal Velocity",
+      date: "7/14/24",
+      location: "Boston, MA, USA",
+      description: "📍Terminal Velocity takes place Sunday, July 14, at Balance Patch on Commonwealth Avenue in Boston.",
+      imageUrl: "https://github.com/pkzstar/plus-side/blob/main/images/upcoming%20events/terminal.png?raw=true",
+      link: "https://www.start.gg/tournament/terminal-velocity/details",
       rankImg: false
     },
     {

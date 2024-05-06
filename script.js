@@ -350,6 +350,22 @@ function showCalendar(month, year) {
                 updateLinkAndImage(); // Initially update link and image
                 fadeInOut(image); // Start fade-in/out animation // Start cycling events
 
+   //Terminal Velocity
+} else if (month === 6 && (date === 14) && year === 2024) {
+
+    let link = document.createElement("a");
+    link.href = "https://www.start.gg/tournament/terminal-velocity/details";
+    link.target = "_blank";
+
+    let image = document.createElement("img");
+    image.src = "https://github.com/pkzstar/plus-side/blob/main/images/upcoming%20events/terminal.png?raw=true";
+
+    image.classList.add("calendarImg");
+
+
+    link.appendChild(image);
+    cell.appendChild(link);
+
                 //Undertow 2024
             } else if (month === 8 && (date === 6 || date === 7 || date === 8) && year === 2024) {
 
