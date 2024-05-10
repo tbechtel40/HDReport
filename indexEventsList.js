@@ -156,7 +156,15 @@ const eventsData = [
       imageUrl: "https://github.com/pkzstar/HDReport/blob/main/images/upcoming%20events/super%20cloudy%20scuffle.png?raw=true",
       link: "https://www.start.gg/tournament/super-cloudy-scuffle-a-durham-regional/details",
       rankImg: false
-    },
+    },{
+    name: ":FF 2024",
+    date: "6/23/24",
+    location: "Esp. Erasme, France",
+    description:"🦁 To enter this tournament, you must be registered also here :GG 2024! You can register for :GG 2024 only participating in HDR. To do so, you have to purchase the venue fee Pass 1 jour (10€) and not pick any event.We know this procedure is weird, given that these two events have absolutely nothing to do with each other.",
+    imageUrl: "https://github.com/pkzstar/HDReport/blob/main/images/upcoming%20events/ff.png?raw=true",
+    link: "https://www.start.gg/tournament/ff-2024/details",
+    rankImg: false
+  },
     {
       name: "Terminal Velocity",
       date: "7/14/24",

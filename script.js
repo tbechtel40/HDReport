@@ -350,6 +350,22 @@ function showCalendar(month, year) {
                 updateLinkAndImage(); // Initially update link and image
                 fadeInOut(image); // Start fade-in/out animation // Start cycling events
 
+   //:FF 2024
+} else if (month === 5 && (date === 23) && year === 2024) {
+
+    let link = document.createElement("a");
+    link.href = "https://www.start.gg/tournament/ff-2024/details";
+    link.target = "_blank";
+
+    let image = document.createElement("img");
+    image.src = "https://github.com/pkzstar/HDReport/blob/main/images/upcoming%20events/ff.png?raw=true";
+
+    image.classList.add("calendarImg");
+
+
+    link.appendChild(image);
+    cell.appendChild(link);
+
    //Terminal Velocity
 } else if (month === 6 && (date === 14) && year === 2024) {
 
