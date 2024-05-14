@@ -85,24 +85,7 @@ function createEventComponent(eventData) {
 const eventsData = [
 
 
-    {
-      name: "Creed III",
-      date: "5/11/24",
-      location: "Philadelphia, PA, USA",
-      imageUrl: "https://github.com/pkzstar/plus-side/blob/main/images/upcoming%20events/creed.png?raw=true",
-      link: "https://www.start.gg/tournament/creed-iii/details",
-      rankImg: false
-
-    }, 
-    {
-        name: "Ghost Town 2",
-        date: "05/11/24",
-        location: "Portland, OR, USA",
-        description: "Portland's fighting game community will be renting out a 500 person capacity event room inside of the Lloyd Center in the middle of NE Portland.",
-        imageUrl: "https://github.com/pkzstar/HDReport/blob/main/images/upcoming%20events/Ghost%20Town%202.png?raw=true",
-        link: "https://www.start.gg/tournament/ghost-town-2-call-of-the-lloyd-ft-zamu-spark/details",
-        rankImg: false
-    },
+ 
     {
       name:"Get Out of My Venue",
       date: "5/17/24 - 5/18/24",
