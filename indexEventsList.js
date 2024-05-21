@@ -17,6 +17,8 @@ function createEventComponent(eventData) {
   // Create the div for event details
   const eventDetailsDiv = document.createElement('div');
   eventDetailsDiv.style.flex = 'auto';
+  eventDetailsDiv.classList.add('eventsContent');
+
 
   // Create the h1 element for event name
   const eventNameLink = document.createElement('a');
@@ -26,8 +28,10 @@ function createEventComponent(eventData) {
   eventNameLink.textContent = eventData.name;
   const eventName = document.createElement('h1');
   eventName.style.flex = '100';
-  eventName.classList.add('article-head');
+  eventName.classList.add('event-head');
   eventName.appendChild(eventNameLink);
+  const lineBreak = document.createElement('br');
+eventName.appendChild(lineBreak)
 
   // Check if rankImg should be visible
   if (eventData.rankImg) {
@@ -35,31 +39,28 @@ function createEventComponent(eventData) {
       rankImg.classList.add('pm-rank');
       rankImg.src = "https://github.com/pkzstar/plus-side/blob/main/images/pmrank.png?raw=true";
       rankImg.alt = '';
-      eventName.appendChild(rankImg); // Append the rankImg to the eventName (h1) element
+      eventDetailsDiv.appendChild(rankImg); // Append the rankImg to the eventName (div) element
   }
 
+// Append the event location to the h1 element
+const locationLabel = document.createElement('b');
+locationLabel.classList.add('event-date');
+locationLabel.style.display = 'inline-flex';
+eventName.appendChild(locationLabel);
+const location = document.createElement('b');
+location.classList.add('event-date');
+location.style.display = 'inline-flex';
+location.textContent = eventData.location;
+eventName.appendChild(location);
+
+
   const eventDate = document.createElement('p');
-  eventDate.classList.add('article-date');
+  eventDate.classList.add('event-date');
   eventDate.style.display = 'block';
   eventDate.textContent = eventData.date;
   eventName.appendChild(eventDate);
   eventDetailsDiv.appendChild(eventName);
 
-  // Create the div for event location
-  const eventLocationDiv = document.createElement('div');
-  eventLocationDiv.classList.add('article-head');
-  eventLocationDiv.style.flex = 'auto';
-  const locationLabel = document.createElement('b');
-  locationLabel.classList.add('article-date');
-  locationLabel.style.display = 'inline-flex';
-  locationLabel.textContent = 'Location :' + '\u00A0';
-  eventLocationDiv.appendChild(locationLabel);
-  const location = document.createElement('b');
-  location.classList.add('article-date');
-  location.style.display = 'inline-flex';
-  location.textContent = eventData.location;
-  eventLocationDiv.appendChild(location);
-  eventDetailsDiv.appendChild(eventLocationDiv);
 
   // Create paragraphs for event description
   const eventDescription = document.createElement('p');
@@ -70,6 +71,7 @@ function createEventComponent(eventData) {
   // Create the start.gg link
   const startGgLink = document.createElement('a');
   startGgLink.classList.add('start-gg');
+  startGgLink.classList.add('start-gg-home');
   startGgLink.href = eventData.link;
   startGgLink.target = '_blank';
   startGgLink.textContent = 'start.gg';
@@ -99,7 +101,7 @@ const eventsData = [
       name: "Invincible VIII",
       date: "6/1/24 - 6/2/24",
       location: "Madison, WI, USA",
-      description: "10,000+ Square Feet Heart of downtown Madison, in walking distance of great restaurants & entertainment. Attached hotel, additional hotels close by Flying in Dane County Regional Airport (MSN) is located 20 minutes away from Union South by car Cheaper flights can be found to General Mitchell Airport (MKE) or O'Hare International Airport (ORD) If flying into O'Hare you can take the Van Galder bus",
+      description: "10,000+ Square Feet Heart of downtown Madison, in walking distance of great restaurants & entertainment. Attached hotel, additional hotels close by Flying in Dane County Regional Airport (MSN) is located 20 minutes away from Union South.",
       imageUrl: "https://github.com/pkzstar/plus-side/blob/main/images/upcoming%20events/invincible8.png?raw=true",
       link: "https://www.start.gg/tournament/invincible-viii/details",
       rankImg: false
@@ -153,19 +155,40 @@ const eventsData = [
 
 
 
-// Create the event components for each event
-const eventComponents = eventsData.map(eventData => createEventComponent(eventData));
+// Create a single div element to contain all the lists
+const eventsContainer = document.createElement('div');
+eventsContainer.classList.add('eventsContainer');
 
-// Append the event components to the eventsList div
+// Create the event components for each pair of events
+for (let i = 0; i < eventsData.length; i += 2) {
+    // Create a new ul for each pair of events
+    const eventList = document.createElement('ul');
+    eventList.classList.add('eventsList');
+
+    // Create and append the li elements for each event in the pair
+    for (let j = i; j < i + 2 && j < eventsData.length; j++) {
+        const eventData = eventsData[j];
+        const eventComponent = createEventComponent(eventData);
+        // Append the event component directly to the ul
+        eventList.appendChild(eventComponent);
+    }
+
+// Check if there's only one li element in the ul and it's not on a screen less than 600px wide
+const lis = eventList.querySelectorAll('li');
+const screenWidthLessThan600 = window.matchMedia("(max-width: 600px)").matches;
+if (lis.length === 1 && !screenWidthLessThan600) {
+    // Apply max-width: 100% to the single li element
+    lis[0].style.marginLeft = '25%';
+}
+
+
+
+    // Append the ul (with li inside) to the container div
+    eventsContainer.appendChild(eventList);
+}
+
+// Append the container div to the eventsListDiv
 document.addEventListener('DOMContentLoaded', function () {
-    const eventsList = document.createElement('ul');
-    eventsList.classList.add('eventsList');
-    eventComponents.forEach(eventComponent => eventsList.appendChild(eventComponent));
-    
     const eventsListDiv = document.getElementById('eventsList');
-    eventsListDiv.parentNode.insertBefore(eventsList, eventsListDiv);
+    eventsListDiv.appendChild(eventsContainer);
 });
-
-// Append the past event element to a container (e.g., a div with id 'pastListContainer')
-const pastListContainer = document.getElementById('pastListContainer');
-pastListContainer.appendChild(pastEventElement);

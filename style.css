@@ -3,6 +3,7 @@ body {
     background-attachment: fixed;
     overflow-x: hidden;
     background-color: rgb(0, 0, 0);
+    font-family: 'Oswald';
 }
 .wallpaper {
     background-image: url(https://wallsneedlove.com/cdn/shop/products/w0563_1s_Black-polished-marble-tile-seamless-herringbone-pattern-wallpaper-Perfect-Manhattan_Repeating-Pattern-Sample-1.jpg?v=1602870203);
@@ -214,6 +215,8 @@ img.plus-side-net-nav:active {
         font-family: 'Oswald';
     }
 .events {
+    max-width: 45%;
+    min-width: 45%;
     font-family: 'Oswald';
     text-align: center;
     padding: 25px;
@@ -231,6 +234,27 @@ img.plus-side-net-nav:active {
    border-inline-color: rgb(4, 217, 255);
    border-block-color: #d63c42;
    writing-mode: horizontal-tb;
+}
+.event-date {
+    text-align: center;
+    font-size: large;
+}
+p.event-date {
+    margin: 2% 0 -2% 0;
+}
+@media only screen and (max-width: 1000px) {
+    b.event-date {
+        font-size: 29px;
+    }
+    p.event-date {
+        font-size: 29px;
+    }
+}
+.eventsList {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+    padding-inline-start: unset;
 }
 .events:hover {
     border-inline-color:#d63c42;
