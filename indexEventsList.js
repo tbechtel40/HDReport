@@ -125,6 +125,16 @@ const eventsData = [
       rankImg: false
     },
     {
+      name: "Garden Brawl",
+      date: "8/24/24",
+      location: "Ridgewood, NJ, USA",
+      description: "On August 24th, it's time to return to the garden. Over 4 years later, our namesake event is back! 🌼 Melee, Ultimate, P+, and HDR 🌼 256 Event Cap 🌼 Ridgewood, New Jersey",
+      imageUrl: "https://www.bing.com/th?pid=Sgg&qlt=100&u=https%3A%2F%2Fimages.start.gg%2Fimages%2Ftournament%2F673156%2Fimage-0a6f4b065a1ae1c4d91d5756129d7bb8-optimized.png&ehk=ba6JikL4X%2Frf5t3o54c5h95%2BdgVUtm66bGi3H2jzZV8%3D&w=280&h=280&r=0",
+      link: "https://www.start.gg/tournament/garden-brawl/details",
+      rankImg: false,
+      trailer: "https://twitter.com/i/status/1797729780219224249"
+    },
+    {
       name: "Undertow 2024",
       date: "9/6/24 - 9/9/24",
       location: "Sandusky, OH, USA",
