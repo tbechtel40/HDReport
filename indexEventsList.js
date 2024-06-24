@@ -90,32 +90,6 @@ const eventsData = [
 
 
     {
-      name: "The Black Market",
-      date: "6/22/24",
-      location: "Calgary, AB, Canada",
-      description: "A celebration of Smash Bros. fan games!Featuring HDR Singles, HDR Doubles and P+ Singles as paid events, along with plenty of free side events such as HDR Amateur brackets, Smash Remix, Rivals of Aether and Sonic Adventure 2!",
-      imageUrl: "https://github.com/pkzstar/plus-side/blob/main/images/upcoming%20events/blackmarket.png?raw=true",
-      link: "https://www.start.gg/tournament/the-black-market/details",
-      rankImg: false
-    },
-    {
-      name: "SUPER CLOUDY SCUFFLE",
-      date: "6/22/24",
-      location: "Oshawa, ON, Canada",
-      description: "Karamel is proud to present: SUPER CLOUDY SCUFFLE! A Durham Regional 🐈 In collaboration with No Style Esports, ft. Ultimate, Melee, Rivals of Aether 2, Project+ and HDR This tournament is dedicated to Karamel's late cat, Cloudy. Her likeness appearing in every iteration of any event hosted by them, hidden in Ontario twitch emotes, and making cameos in many livestreams. This tournament is a final send off for her. Please feel free to take Cloudy merch off of the floor, tables and chair throughout the event.",
-      imageUrl: "https://github.com/pkzstar/HDReport/blob/main/images/upcoming%20events/super%20cloudy%20scuffle.png?raw=true",
-      link: "https://www.start.gg/tournament/super-cloudy-scuffle-a-durham-regional/details",
-      rankImg: false
-    },{
-    name: ":FF 2024",
-    date: "6/23/24",
-    location: "Esp. Erasme, France",
-    description:"🦁 To enter this tournament, you must be registered also here :GG 2024! You can register for :GG 2024 only participating in HDR. To do so, you have to purchase the venue fee Pass 1 jour (10€) and not pick any event.We know this procedure is weird, given that these two events have absolutely nothing to do with each other.",
-    imageUrl: "https://github.com/pkzstar/HDReport/blob/main/images/upcoming%20events/ff.png?raw=true",
-    link: "https://www.start.gg/tournament/ff-2024/details",
-    rankImg: false
-  },
-    {
       name: "Terminal Velocity",
       date: "7/14/24",
       location: "Boston, MA, USA",
