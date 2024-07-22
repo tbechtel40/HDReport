@@ -86,18 +86,6 @@ eventName.appendChild(location);
 // Sample event data (replace this with actual event data)
 const eventsData = [
 
-
-
-
-    {
-      name: "Terminal Velocity",
-      date: "7/14/24",
-      location: "Boston, MA, USA",
-      description: "📍Terminal Velocity takes place Sunday, July 14, at Balance Patch on Commonwealth Avenue in Boston.",
-      imageUrl: "https://github.com/pkzstar/plus-side/blob/main/images/upcoming%20events/terminal.png?raw=true",
-      link: "https://www.start.gg/tournament/terminal-velocity/details",
-      rankImg: false
-    },
     {
       name: "Garden Brawl",
       date: "8/24/24",
