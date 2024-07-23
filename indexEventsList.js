@@ -86,6 +86,27 @@ eventName.appendChild(location);
 // Sample event data (replace this with actual event data)
 const eventsData = [
 
+
+      {
+      name: "Keep it Chill #6",
+      date: "8/3/24",
+      location: "Portland, OR, USA",
+      description: "KEEP IT CHILL: OREGON'S PREMIERE REGIONAL. FOOD & DRINK AVAILABLE AT EVENT. Across from Lucky Lab! Food options: Lucky Lab Pub, Ice Cream",
+      imageUrl: "https://www.bing.com/th?pid=Sgg&qlt=100&u=https%3A%2F%2Fimages.start.gg%2Fimages%2Ftournament%2F632796%2Fimage-f4693bc7d9c3126edd76e47beb7589e0-optimized.png&ehk=XH34e%2BOEvBnH7eVETknQjmfJUkdkh07MTT%2BnaDMXR%2Fc%3D&w=280&h=280&r=0",
+      link: "https://www.start.gg/tournament/keep-it-chill-6-furret-s-fiesta-2/details",
+      rankImg: false,
+      trailer: ""
+    },
+    {
+      name: "Lacombe Dome The Movie",
+      date: "8/7/24 - 8/18/24",
+      location: "Lacombe, AB T4L 0B6, Canada",
+      description: "",
+      imageUrl: "https://www.bing.com/th?pid=Sgg&qlt=100&u=https%3A%2F%2Fimages.start.gg%2Fimages%2Ftournament%2F641692%2Fimage-45f598d07928666e7a2000ad17be87da-optimized.png&ehk=i4ux6d%2FfaynTqu9IelDimyU24TWUqSkLAEZ5uhQhBiA%3D&w=280&h=280&r=0",
+      link: "https://www.start.gg/tournament/lacombe-dome-the-movie-1/details",
+      rankImg: false,
+      trailer: ""
+    },
     {
       name: "Garden Brawl",
       date: "8/24/24",
@@ -104,6 +125,28 @@ const eventsData = [
       imageUrl: "https://github.com/pkzstar/plus-side/blob/main/images/upcoming%20events/undertow2024.png?raw=true",
       link: "https://www.start.gg/tournament/undertow-2024/details",
       rankImg: false
+    },
+    {
+      name: "Infrared 2024",
+      date: "10/6/24",
+      location: "Westford, MA, USA",
+      description: "This event will take place on Saturday, October 6th inside of the Wavelength 2024 Venue. You MUST be registered for Wavelength 2024 as a competitor or spectator in order to attend this event!",
+      imageUrl: "https://www.bing.com/th?pid=Sgg&qlt=100&u=https%3A%2F%2Fimages.start.gg%2Fimages%2Ftournament%2F689857%2Fimage-beb293c506128370f03dbac8b3301b61-optimized.jpg&ehk=USndSOdl8bTgh1izawrAwxr2nxvNn%2FTpocJgAGqoDY0%3D&w=280&h=280&r=0",
+      link: "https://www.start.gg/tournament/infrared-2024/details",
+      rankImg: false,
+      trailer: "",
+      stream: ""
+    },
+    {
+      name: "Beachin",
+      date: "11/2/24 - 11/3/24",
+      location: "Sunny Isles Beach, FL, USA",
+      description: "YachtClub Returns to Miami for another BANGER. Huge vibes going down on Saturday Night in the friendlies room of a certain major event down in Florida. HDR Singles Tournament",
+      imageUrl: "https://www.bing.com/th?pid=Sgg&qlt=100&u=https%3A%2F%2Fimages.start.gg%2Fimages%2Ftournament%2F686090%2Fimage-684569cc3ea9311290b0ea4112e96952-optimized.png&ehk=QzjLADSfuKgzgjCzafkZLcvUzaGH%2Fu69WSLcT4QYIMo%3D&w=280&h=280&r=0",
+      link: "https://www.start.gg/tournament/beachin/details",
+      rankImg: false,
+      trailer: "",
+      stream: ""
     },
 
     ];

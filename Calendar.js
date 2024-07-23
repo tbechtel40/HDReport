@@ -383,6 +383,24 @@ function showCalendar(month, year) {
     cell.appendChild(link);
 
 
+                    //Keep it Chill #6
+                } else if (month === 7 && (date === 3) && year === 2024) {
+
+
+                    let link = document.createElement("a");
+                    link.href = "https://www.start.gg/tournament/keep-it-chill-6-furret-s-fiesta-2/details";
+                    link.target = "_blank";
+
+                    let image = document.createElement("img");
+                    image.src = "https://www.bing.com/th?pid=Sgg&qlt=100&u=https%3A%2F%2Fimages.start.gg%2Fimages%2Ftournament%2F632796%2Fimage-f4693bc7d9c3126edd76e47beb7589e0-optimized.png&ehk=XH34e%2BOEvBnH7eVETknQjmfJUkdkh07MTT%2BnaDMXR%2Fc%3D&w=280&h=280&r=0";
+
+                    image.classList.add("calendarImg");
+
+
+                    link.appendChild(image);
+                    cell.appendChild(link);
+
+
                     //Garden Brawl
                 } else if (month === 7 && (date === 24) && year === 2024) {
 
@@ -400,6 +418,24 @@ function showCalendar(month, year) {
                     link.appendChild(image);
                     cell.appendChild(link);
 
+                                        //Lacombe Dome The Movie
+                } else if (month === 7 && (date === 17 || date === 18) && year === 2024) {
+
+
+                    let link = document.createElement("a");
+                    link.href = "https://www.start.gg/tournament/lacombe-dome-the-movie-1/details";
+                    link.target = "_blank";
+
+                    let image = document.createElement("img");
+                    image.src = "https://www.bing.com/th?pid=Sgg&qlt=100&u=https%3A%2F%2Fimages.start.gg%2Fimages%2Ftournament%2F641692%2Fimage-45f598d07928666e7a2000ad17be87da-optimized.png&ehk=i4ux6d%2FfaynTqu9IelDimyU24TWUqSkLAEZ5uhQhBiA%3D&w=280&h=280&r=0";
+
+                    image.classList.add("calendarImg");
+
+
+                    link.appendChild(image);
+                    cell.appendChild(link);
+
+
                 //Undertow 2024
             } else if (month === 8 && (date === 6 || date === 7 || date === 8) && year === 2024) {
 
@@ -416,6 +452,41 @@ function showCalendar(month, year) {
 
                 link.appendChild(image);
                 cell.appendChild(link);
+
+                                    //Infrared 2024
+                } else if (month === 9 && (date === 6) && year === 2024) {
+
+
+                    let link = document.createElement("a");
+                    link.href = "https://www.start.gg/tournament/infrared-2024/details";
+                    link.target = "_blank";
+
+                    let image = document.createElement("img");
+                    image.src = "https://www.bing.com/th?pid=Sgg&qlt=100&u=https%3A%2F%2Fimages.start.gg%2Fimages%2Ftournament%2F689857%2Fimage-beb293c506128370f03dbac8b3301b61-optimized.jpg&ehk=USndSOdl8bTgh1izawrAwxr2nxvNn%2FTpocJgAGqoDY0%3D&w=280&h=280&r=0";
+
+                    image.classList.add("calendarImg");
+
+
+                    link.appendChild(image);
+                    cell.appendChild(link);
+
+
+                                        //Beachin
+                } else if (month === 10 && (date === 2 || date === 3) && year === 2024) {
+
+
+                    let link = document.createElement("a");
+                    link.href = "https://www.start.gg/tournament/beachin/details";
+                    link.target = "_blank";
+
+                    let image = document.createElement("img");
+                    image.src = "https://www.bing.com/th?pid=Sgg&qlt=100&u=https%3A%2F%2Fimages.start.gg%2Fimages%2Ftournament%2F686090%2Fimage-684569cc3ea9311290b0ea4112e96952-optimized.png&ehk=QzjLADSfuKgzgjCzafkZLcvUzaGH%2Fu69WSLcT4QYIMo%3D&w=280&h=280&r=0";
+
+                    image.classList.add("calendarImg");
+
+
+                    link.appendChild(image);
+                    cell.appendChild(link);
 
                 } else {
                     // Create and append the date text only if there is no image
