@@ -159,6 +159,17 @@ const eventsData = [
       trailer: "",
       stream: ""
     },
+    {
+      name: "Blacklisted 9",
+      date: "11/16/24 - 11/17/24",
+      location: "Springfield, MA, USA",
+      description: "Blacklisted has moved venues for the first time in five years! Join us in Springfield, Massachusetts for the biggest and best Blacklisted yet! Blacklisted 9 will be returning with Doubles and Singles pools which will send players into double elimination Pro and Amateur brackets - now for both Project+ and HDR!",
+      imageUrl: "https://www.bing.com/th?pid=Sgg&qlt=100&u=https%3A%2F%2Fimages.start.gg%2Fimages%2Ftournament%2F681909%2Fimage-7d4e0ff8435ebeb4a6ceb3cd129b1705-optimized.png&ehk=sQBjT2ATBqcPGXSXEzLSl2H8PYlq6I79X7ucG2mT4hU%3D&w=280&h=280&r=0",
+      link: "https://www.start.gg/tournament/blacklisted-9-a-project-and-hdr-major/details",
+      rankImg: false, 
+      trailer: "https://twitter.com/BlacklistedSSB/status/1817403907984761246",
+      stream: "https://www.twitch.tv/projectmnexus"
+    }
 
     ];
 
