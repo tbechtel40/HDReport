@@ -87,16 +87,7 @@ eventName.appendChild(location);
 const eventsData = [
 
 
-      {
-      name: "Keep it Chill #6",
-      date: "8/3/24",
-      location: "Portland, OR, USA",
-      description: "KEEP IT CHILL: OREGON'S PREMIERE REGIONAL. FOOD & DRINK AVAILABLE AT EVENT. Across from Lucky Lab! Food options: Lucky Lab Pub, Ice Cream",
-      imageUrl: "https://www.bing.com/th?pid=Sgg&qlt=100&u=https%3A%2F%2Fimages.start.gg%2Fimages%2Ftournament%2F632796%2Fimage-f4693bc7d9c3126edd76e47beb7589e0-optimized.png&ehk=XH34e%2BOEvBnH7eVETknQjmfJUkdkh07MTT%2BnaDMXR%2Fc%3D&w=280&h=280&r=0",
-      link: "https://www.start.gg/tournament/keep-it-chill-6-furret-s-fiesta-2/details",
-      rankImg: false,
-      trailer: ""
-    },
+
     {
       name: "Lacombe Dome The Movie",
       date: "8/7/24 - 8/18/24",
