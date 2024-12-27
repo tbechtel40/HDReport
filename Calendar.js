@@ -523,6 +523,22 @@ function showCalendar(month, year) {
                     link.appendChild(image);
                     cell.appendChild(link);
 
+                } 
+                // Gigaton Hammer 3
+                else if (month === 1 && (date === 3 || date === 4 || date === 5) && year === 2025) {
+                    let link = document.createElement("a");
+                    link.href = "https://www.start.gg/tournament/gigaton-hammer-3-hdr-lmbm/details";
+                    link.target = "_blank";
+
+                    let image = document.createElement("img");
+                    image.src = "https://www.bing.com/th?pid=Sgg&qlt=100&u=https%3A%2F%2Fimages.start.gg%2Fimages%2Ftournament%2F730804%2Fimage-9bb3a153435e56720e23a06e7e0fd2f0-optimized.png&ehk=IEnxrX1br9kHXqHbTyO2EX6H5FMWD1jJJKrvUi%2Bgi44%3D&w=280&h=280&r=0";
+
+                    image.classList.add("calendarImg");
+
+
+                    link.appendChild(image);
+                    cell.appendChild(link);
+
                 } else {
                     // Create and append the date text only if there is no image
                     cellText = document.createTextNode(date);
