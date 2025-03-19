@@ -1299,6 +1299,9 @@ button.calViewList {
     color: #d63c42;
 }
 .blurbText {
-    -webkit-text-stroke: 0.25px black;
-    text-shadow: 2px 2px #d63c42;
+    background-color: #d63c417e;
+    border-radius: 10px;
+    border-style: groove;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 0.25px rgb(0, 0, 0);
 }
